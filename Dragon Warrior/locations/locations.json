@@ -66,7 +66,7 @@
             ]
           },
           {
-            "name": "Returned Gwaelin to Castle",
+            "name": "Return Gwaelin to Castle",
             "access_rules": [
               "@Main/Swamp Cave/Rescue Princess Gwaelin"
             ],

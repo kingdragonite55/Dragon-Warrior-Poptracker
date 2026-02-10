@@ -15,4 +15,4 @@ Features
 
 Notes
 - Levelsanity checks are placeholder (all 30 show for now)
-- Erdrick’s gear & Princess rescue logic will be refined in future updates
+

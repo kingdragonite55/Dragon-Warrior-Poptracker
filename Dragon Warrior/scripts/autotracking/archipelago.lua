@@ -1,41 +1,62 @@
+-- Dragon Warrior PopTracker - Archipelago autotracking
+-- (Panel + map checks + equipment dock)
 
--- This is a bit jank at the moment.. I was having issues getting half of it to work
-
-local ITEM_MAPPING = require "autotracking.item_mapping"
+local ITEM_MAPPING     = require "autotracking.item_mapping"
 local LOCATION_MAPPING = require "autotracking.location_mapping"
-local OPTION_MAPPING = require "autotracking.option_mapping"
+local OPTION_MAPPING   = require "autotracking.option_mapping"
 
 CUR_INDEX = -1
-AP_INDEX = -1
+AP_INDEX  = -1
 SAVED_SLOT_DATA = {}
-
 
 -- Equipment dock display logic
 local EQUIPMENT_UPGRADES = {
     ["Progressive Weapon Upgrade"] = "equipment_weapon",
-    ["Progressive Armor Upgrade"] = "equipment_armor",
+    ["Progressive Armor Upgrade"]  = "equipment_armor",
     ["Progressive Shield Upgrade"] = "equipment_shield"
 }
 
-local SHOP_LOCATIONS_TO_IMAGES = {
-    ["Purchased: Bamboo Pole"] = "bamboo_pole",
-    ["Purchased: Club"] = "club",
-    ["Purchased: Copper Sword"] = "copper_sword",
-    ["Purchased: Hand Axe"] = "hand_axe",
-    ["Purchased: Broad Sword"] = "broad_sword",
-    ["Purchased: Flame Sword"] = "flame_sword",
-    ["Purchased: Clothes"] = "clothes",
-    ["Purchased: Leather Armor"] = "leather_armor",
-    ["Purchased: Chain Mail"] = "chain_mail",
-    ["Purchased: Half Plate"] = "half_plate",
-    ["Purchased: Full Plate"] = "full_plate",
-    ["Purchased: Magic Armor"] = "magic_armor",
-    ["Purchased: Small Shield"] = "small_shield",
-    ["Purchased: Large Shield"] = "large_shield",
-    ["Purchased: Silver Shield"] = "silver_shield"
-}
+-- Mark a tracker item as acquired in a way that works for toggle/progressive/consumable.
+local function MarkOne(code)
+    local obj = Tracker:FindObjectForCode(code)
+    if not obj then return end
 
-function ClearItem(code, type)
+    if obj.Type == "toggle" then
+        obj.Active = true
+    elseif obj.Type == "progressive" then
+        obj.CurrentStage = math.max(obj.CurrentStage or 0, 1)
+        obj.Active = true
+    elseif obj.Type == "consumable" then
+        obj.AcquiredCount = math.max(obj.AcquiredCount or 0, 1)
+    else
+        obj.Active = true
+    end
+end
+
+-- Shopsanity panel uses plain item codes (bamboo_pole, chain_mail, etc.).
+-- Some packs also have equipment_* aliases; setting both doesn't hurt.
+local function MarkPanelItemAcquired(code)
+    if not code or code == "" then return end
+    MarkOne(code)
+    if not code:match("^equipment_") then
+        MarkOne("equipment_" .. code)
+    end
+end
+
+local function ToItemCodeFromPurchaseLeaf(leaf)
+    -- leaf like: "Purchase Copper Sword"
+    local item = leaf and leaf:match("^Purchase%s+(.+)$") or nil
+    if not item then return nil end
+
+    item = item:lower()
+    item = item:gsub("['’]", "")        -- drop apostrophes
+    item = item:gsub("[^%w]+", "_")     -- spaces/punct -> _
+    item = item:gsub("_+", "_")         -- collapse runs
+    item = item:gsub("^_", ""):gsub("_$", "")
+    return item
+end
+
+local function ClearItem(code, type)
     local item = Tracker:FindObjectForCode(code)
     if not item then return end
     if type == "toggle" then
@@ -49,17 +70,15 @@ function ClearItem(code, type)
 end
 
 function ClearItems(slot_data)
-    AP_INDEX = -1
+    AP_INDEX  = -1
     CUR_INDEX = -1
 
     for _, v in pairs(ITEM_MAPPING) do
         ClearItem(v[1], v[2])
     end
 
-    -- Also clear dock display items directly
-    local dock_codes = {
-        "equipment_weapon", "equipment_armor", "equipment_shield"
-    }
+    -- Clear dock display items directly
+    local dock_codes = { "equipment_weapon", "equipment_armor", "equipment_shield" }
     for _, code in ipairs(dock_codes) do
         local obj = Tracker:FindObjectForCode(code)
         if obj then
@@ -68,11 +87,12 @@ function ClearItems(slot_data)
         end
     end
 
-    -- Option toggles using SAVED_SLOT_DATA (flat keys)
-    local opts = SAVED_SLOT_DATA or {}
-    local mapping = require("scripts/autotracking/option_mapping")
-    for key, mapped in pairs(mapping) do
-        local isEnabled = opts[key] == 1 or opts[key] == 50 or opts[key] == true
+    -- Auto-toggle option buttons from SlotData.
+    -- option_mapping.lua in this pack is "slotdata_key -> tracker_code OR {tracker_code,...}"
+    local opts = slot_data or SAVED_SLOT_DATA or {}
+    for key, mapped in pairs(OPTION_MAPPING) do
+        local isEnabled = (opts[key] == 1) or (opts[key] == 50) or (opts[key] == true)
+
         if type(mapped) == "table" then
             for _, code in ipairs(mapped) do
                 local obj = Tracker:FindObjectForCode(code)
@@ -85,9 +105,7 @@ function ClearItems(slot_data)
     end
 end
 
-
-
-function SetItem(code, type)
+local function SetItem(code, type)
     local item = Tracker:FindObjectForCode(code)
     if not item then return end
 
@@ -108,10 +126,10 @@ function onItem(index, item_id, item_name, player_number)
 
     local mapped = ITEM_MAPPING[item_id]
     if mapped then
-        local code, mode = mapped[1], mapped[2]
-        SetItem(code, mode)
+        SetItem(mapped[1], mapped[2])
     end
 
+    -- Equipment dock stages
     local alt_code = EQUIPMENT_UPGRADES[item_name]
     if alt_code then
         local dock_item = Tracker:FindObjectForCode(alt_code)
@@ -122,10 +140,13 @@ function onItem(index, item_id, item_name, player_number)
     end
 end
 
-function onLocationHandler(index, location_id)
+function onLocationHandler(index, location_id, location_name)
     if index < 0 then return end
 
+    -- Resolve to tracker location code/path
     local location_path = LOCATION_MAPPING[tonumber(location_id)]
+
+    -- Some clients hand us a name instead of an id; try to match by leaf name.
     if not location_path and type(location_id) == "string" then
         for _, v in pairs(LOCATION_MAPPING) do
             local clean_name = v:match("([^/]+)$")
@@ -136,45 +157,65 @@ function onLocationHandler(index, location_id)
         end
     end
 
+    -- Shopsanity Panel:
+    -- Trigger off the leaf segment of the resolved path (best) or the provided name.
+    do
+        local leaf = nil
+        if type(location_path) == "string" then
+            leaf = location_path:match("([^/]+)$")
+        end
+        if not leaf or leaf == "" then
+            leaf = location_name or (type(location_id) == "string" and location_id) or ""
+        end
+
+        local code = ToItemCodeFromPurchaseLeaf(leaf)
+        if code then
+            MarkPanelItemAcquired(code)
+        end
+    end
+
+    -- Monstersanity + Dragonlord panel (UI grids)
+    do
+        local leaf = nil
+        if type(location_path) == "string" then
+            leaf = location_path:match("([^/]+)$")
+        end
+        if not leaf or leaf == "" then
+            leaf = location_name or (type(location_id) == "string" and location_id) or ""
+        end
+
+        local mon = leaf:match("^Defeated%s+(.+)$")
+        if mon and mon ~= "Dragonlord" then
+            local code = mon:lower()
+            code = code:gsub("['’]", "")
+            code = code:gsub("[^%w]+", "_")
+            code = code:gsub("_+", "_")
+            code = code:gsub("^_", ""):gsub("_$", "")
+
+            local obj = Tracker:FindObjectForCode(code)
+            if obj then obj.Active = true end
+        end
+    end
+
+
+
     if not location_path then return end
 
-
--- Harp turn-in logic: flip image when staff location is completed
-if location_id == 7260 or tonumber(location_id) == 7260 then
-    local harp = Tracker:FindObjectForCode("silver_harp")
-    if harp and harp.CurrentStage ~= 2 then
-        harp.CurrentStage = 2
-        harp.Active = true
+    -- Harp turn-in logic: flip image when staff location is completed
+    if location_id == 0x0D0304 or tonumber(location_id) == 0x0D0304 then
+        local harp = Tracker:FindObjectForCode("silver_harp")
+        if harp and harp.CurrentStage ~= 2 then
+            harp.CurrentStage = 2
+            harp.Active = true
+        end
     end
-end
 
-
-
-
-
-
-
-
-
+    -- Normal location marking (map dots / chest counts)
     local obj = Tracker:FindObjectForCode(location_path)
     if obj then
         obj.AvailableChestCount = 0
-
-        local loc_name = location_path:match(".-/Shopsanity/(Purchased: .+)$")
-        if loc_name then
-            local image_code = SHOP_LOCATIONS_TO_IMAGES[loc_name]
-            if image_code then
-                local dock_item = Tracker:FindObjectForCode(image_code)
-                if dock_item and not dock_item.Active then
-                    dock_item.Active = true
-                end
-            end
-        end
-
         local parent = obj.Parent
-        if parent then
-            parent:UpdateVisibility()
-        end
+        if parent then parent:UpdateVisibility() end
     end
 end
 
@@ -198,26 +239,19 @@ function onClearHandler(slot_data)
     reset_all_locations()
 end
 
-
-
-
 function UpdateReceivedItems()
     if not Archipelago or not Archipelago.ReceivedItems then return end
 
     for _, item in pairs(Archipelago.ReceivedItems) do
-        local index = item.index
-        if index <= AP_INDEX then goto continue end
+        local idx = item.index
+        if idx <= AP_INDEX then goto continue end
         if item.player ~= Archipelago.PlayerNumber then goto continue end
+        AP_INDEX = idx
 
-        AP_INDEX = index
-
-        local id = item.item
-        local mapping = ITEM_MAPPING[id]
+        local mapping = ITEM_MAPPING[item.item]
         if mapping then
-            local code, type = mapping[1], mapping[2]
-            SetItem(code, type)
+            SetItem(mapping[1], mapping[2])
         end
-
         ::continue::
     end
 end
@@ -229,9 +263,7 @@ function UpdateCheckedLocations()
         local code = LOCATION_MAPPING[id]
         if code then
             local obj = Tracker:FindObjectForCode(code)
-            if obj then
-                obj.AvailableChestCount = 0
-            end
+            if obj then obj.AvailableChestCount = 0 end
         end
     end
 end

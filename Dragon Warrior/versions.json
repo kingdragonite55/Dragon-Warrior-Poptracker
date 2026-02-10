@@ -1,8 +1,8 @@
 {
   "versions": [
     {
-      "version": "0.1.4",
-      "changelog": "Added tracking support for Gwaelin quest line.",
+      "version": "0.1.5",
+      "changelog": "Added tracking support for Monstersanity and repaired auto tracking from latest apworld update.",
       "file": "Dragon Warrior.zip"
     }
   ]

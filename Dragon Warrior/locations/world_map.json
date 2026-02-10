@@ -92,7 +92,7 @@
       },
       {
         "name": "Gwaelin's Love",
-        "ref": "Main/Tantagel Castle/Returned Gwaelin to Castle"
+        "ref": "Main/Tantagel Castle/Return Gwaelin to Castle"
       }
     ]
   },
@@ -312,7 +312,7 @@
     "name": "Shopsanity",
     "map_locations": [
       {
-        "map": "world_map",
+        "map": "world_map_DUMMYPIN",
         "x": 0,
         "y": 990
       }

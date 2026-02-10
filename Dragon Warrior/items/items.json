@@ -247,6 +247,13 @@
     "allow_disabled": true
   },
   {
+    "name": "Monstersanity",
+    "type": "toggle",
+    "img": "images/items/monstersanity.png",
+    "codes": "monstersanity",
+    "allow_disabled": true
+  },
+  {
     "name": "Bamboo Pole",
     "type": "toggle",
     "img": "images/items/weapon_bamboo_pole.png",
@@ -347,6 +354,246 @@
     "type": "toggle",
     "img": "images/items/shield_silver.png",
     "codes": "equipment_silver_shield"
+  },
+  {
+    "name": "Armored Knight",
+    "type": "toggle",
+    "img": "images/sprites/armored_knight.png",
+    "codes": "armored_knight"
+  },
+  {
+    "name": "Axe Knight",
+    "type": "toggle",
+    "img": "images/sprites/axe_knight.png",
+    "codes": "axe_knight"
+  },
+  {
+    "name": "Blue Dragon",
+    "type": "toggle",
+    "img": "images/sprites/blue_dragon.png",
+    "codes": "blue_dragon"
+  },
+  {
+    "name": "Demon Knight",
+    "type": "toggle",
+    "img": "images/sprites/demon_knight.png",
+    "codes": "demon_knight"
+  },
+  {
+    "name": "Dragon Lord Human",
+    "type": "toggle",
+    "img": "images/sprites/dragonlord_1.png",
+    "codes": "dragonlord_1"
+  },
+  {
+    "name": "Dragon Lord Dragon",
+    "type": "toggle",
+    "img": "images/sprites/dragonlord_2.png",
+    "codes": "dragonlord_2"
+  },
+  {
+    "name": "Drakee",
+    "type": "toggle",
+    "img": "images/sprites/drakee.png",
+    "codes": "drakee"
+  },
+  {
+    "name": "Drakeema",
+    "type": "toggle",
+    "img": "images/sprites/drakeema.png",
+    "codes": "drakeema"
+  },
+  {
+    "name": "Droll",
+    "type": "toggle",
+    "img": "images/sprites/droll.png",
+    "codes": "droll"
+  },
+  {
+    "name": "Drollmagi",
+    "type": "toggle",
+    "img": "images/sprites/drollmagi.png",
+    "codes": "drollmagi"
+  },
+  {
+    "name": "Druin",
+    "type": "toggle",
+    "img": "images/sprites/druin.png",
+    "codes": "druin"
+  },
+  {
+    "name": "Druinlord",
+    "type": "toggle",
+    "img": "images/sprites/druinlord.png",
+    "codes": "druinlord"
+  },
+  {
+    "name": "Ghost",
+    "type": "toggle",
+    "img": "images/sprites/ghost.png",
+    "codes": "ghost"
+  },
+  {
+    "name": "Goldman",
+    "type": "toggle",
+    "img": "images/sprites/goldman.png",
+    "codes": "goldman"
+  },
+  {
+    "name": "Golem",
+    "type": "toggle",
+    "img": "images/sprites/golem.png",
+    "codes": "golem"
+  },
+  {
+    "name": "Green Dragon",
+    "type": "toggle",
+    "img": "images/sprites/green_dragon.png",
+    "codes": "green_dragon"
+  },
+  {
+    "name": "Knight",
+    "type": "toggle",
+    "img": "images/sprites/knight.png",
+    "codes": "knight"
+  },
+  {
+    "name": "Magician",
+    "type": "toggle",
+    "img": "images/sprites/magician.png",
+    "codes": "magician"
+  },
+  {
+    "name": "Magidrakee",
+    "type": "toggle",
+    "img": "images/sprites/magidrakee.png",
+    "codes": "magidrakee"
+  },
+  {
+    "name": "Magiwyvern",
+    "type": "toggle",
+    "img": "images/sprites/magiwyvern.png",
+    "codes": "magiwyvern"
+  },
+  {
+    "name": "Metal Scorpion",
+    "type": "toggle",
+    "img": "images/sprites/metal_scorpion.png",
+    "codes": "metal_scorpion"
+  },
+  {
+    "name": "Metal Slime",
+    "type": "toggle",
+    "img": "images/sprites/metal_slime.png",
+    "codes": "metal_slime"
+  },
+  {
+    "name": "Poltergeist",
+    "type": "toggle",
+    "img": "images/sprites/poltergeist.png",
+    "codes": "poltergeist"
+  },
+  {
+    "name": "Red Dragon",
+    "type": "toggle",
+    "img": "images/sprites/red_dragon.png",
+    "codes": "red_dragon"
+  },
+  {
+    "name": "Red Slime",
+    "type": "toggle",
+    "img": "images/sprites/red_slime.png",
+    "codes": "red_slime"
+  },
+  {
+    "name": "Rogue Scorpion",
+    "type": "toggle",
+    "img": "images/sprites/rogue_scorpion.png",
+    "codes": "rogue_scorpion"
+  },
+  {
+    "name": "Scorpion",
+    "type": "toggle",
+    "img": "images/sprites/scorpion.png",
+    "codes": "scorpion"
+  },
+  {
+    "name": "Skeleton",
+    "type": "toggle",
+    "img": "images/sprites/skeleton.png",
+    "codes": "skeleton"
+  },
+  {
+    "name": "Slime",
+    "type": "toggle",
+    "img": "images/sprites/slime.png",
+    "codes": "slime"
+  },
+  {
+    "name": "Specter",
+    "type": "toggle",
+    "img": "images/sprites/specter.png",
+    "codes": "specter"
+  },
+  {
+    "name": "Starwyvern",
+    "type": "toggle",
+    "img": "images/sprites/starwyvern.png",
+    "codes": "starwyvern"
+  },
+  {
+    "name": "Stoneman",
+    "type": "toggle",
+    "img": "images/sprites/stoneman.png",
+    "codes": "stoneman"
+  },
+  {
+    "name": "Warlock",
+    "type": "toggle",
+    "img": "images/sprites/warlock.png",
+    "codes": "warlock"
+  },
+  {
+    "name": "Werewolf",
+    "type": "toggle",
+    "img": "images/sprites/werewolf.png",
+    "codes": "werewolf"
+  },
+  {
+    "name": "Wizard",
+    "type": "toggle",
+    "img": "images/sprites/wizard.png",
+    "codes": "wizard"
+  },
+  {
+    "name": "Wolf",
+    "type": "toggle",
+    "img": "images/sprites/wolf.png",
+    "codes": "wolf"
+  },
+  {
+    "name": "Wolflord",
+    "type": "toggle",
+    "img": "images/sprites/wolflord.png",
+    "codes": "wolflord"
+  },
+  {
+    "name": "Wraith",
+    "type": "toggle",
+    "img": "images/sprites/wraith.png",
+    "codes": "wraith"
+  },
+  {
+    "name": "Wraith Knight",
+    "type": "toggle",
+    "img": "images/sprites/wraith_knight.png",
+    "codes": "wraith_knight"
+  },
+  {
+    "name": "Wyvern",
+    "type": "toggle",
+    "img": "images/sprites/wyvern.png",
+    "codes": "wyvern"
   },
   {
     "name": "Current Weapon",

@@ -35,13 +35,14 @@
 
   "option_toggles": {
     "type": "itemgrid",
-    "item_margin": "4, 6",
+    "item_margin": "4, 1",
     "item_width": 100,
     "item_height": 36,
     "rows": [
       ["shopsanity"],
       ["levelsanity"],
-      ["searchsanity"]
+      ["searchsanity"],
+      ["monstersanity"]
     ]
   },
   "shopsanity_panel": {
@@ -54,5 +55,26 @@
       ["flame_sword", "clothes", "leather_armor", "chain_mail", "half_plate"],
       ["full_plate", "magic_armor", "small_shield", "large_shield", "silver_shield"]
     ]
+  },
+"monstersanity_panel": {
+  "type": "itemgrid",
+  "item_margin": "2, 2",
+  "item_width": 36,
+  "item_height": 36,
+  "rows": [
+    ["slime", "red_slime", "metal_slime", "drakee", "magidrakee", "drakeema", "ghost", "poltergeist", "specter", "magician", "warlock", "wizard", "druin"],
+    ["scorpion", "metal_scorpion", "rogue_scorpion", "skeleton", "wraith", "wraith_knight", "demon_knight", "wolf", "wolflord", "werewolf", "goldman", "golem", "stoneman"],
+    ["droll", "drollmagi", "wyvern", "magiwyvern", "starwyvern", "knight", "axe_knight", "armored_knight", "green_dragon", "blue_dragon", "red_dragon", "dragonlord_1", "druinlord"]
+   ]
+  },
+"dragonlord_panel": {
+  "type": "itemgrid",
+  "item_margin": "2, 2",
+  "item_width": 98,
+  "item_height": 98,
+  "rows": [
+    ["dragonlord_2"]
+   ]
   }
 }
+
