@@ -1,8 +1,8 @@
 {
   "versions": [
     {
-      "version": "0.1.5",
-      "changelog": "Added tracking support for Monstersanity and repaired auto tracking from latest apworld update.",
+      "version": "0.1.6",
+      "changelog": "Fixed Monstersanity toggle to auto toggle",
       "file": "Dragon Warrior.zip"
     }
   ]

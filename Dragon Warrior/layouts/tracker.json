@@ -65,6 +65,7 @@
   "header": "Shopsanity",
   "dock": "left",
   "min_size": [180, 100],
+  "visible": "@shopsanity",
   "content": {
     "type": "layout",
     "key": "shopsanity_panel"
@@ -77,6 +78,7 @@
   "header": "Monstersanity",
   "dock": "left",
   "min_size": [180, 100],
+  "visible": "@monstersanity",
   "content": {
     "type": "layout",
     "key": "monstersanity_panel"

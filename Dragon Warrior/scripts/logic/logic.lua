@@ -85,3 +85,7 @@ end
 function Searchsanity()
     return Tracker:ProviderCountForCode("searchsanity") > 0
 end
+
+function Monstersanity()
+    return Tracker:ProviderCountForCode("monstersanity") > 0
+end

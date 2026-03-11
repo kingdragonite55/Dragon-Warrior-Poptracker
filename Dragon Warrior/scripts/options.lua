@@ -5,6 +5,7 @@ local toggles = {
     { code = "shopsanity", label = "Shop Sanity" },
     { code = "searchsanity", label = "Search Sanity" },
     { code = "levelsanity", label = "Level Checks" },
+    { code = "monstersanity", label = "Monster Sanity" },
 }
 
 for _, opt in ipairs(toggles) do
