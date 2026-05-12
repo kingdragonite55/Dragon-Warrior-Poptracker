@@ -17,10 +17,10 @@ end
 
 function rainbow_shrine()
 	if has("staff_of_rain") and has("stones_of_sunlight") and has("magic_key") then
-		if has("searchsanity") then
-			return has("erdricks_token" and has("fairy_flute")
-		else
+		if not has("searchsanity") then
 			return true
+		else
+			return has("erdricks_token") and has("fairy_flute")
 		end
 	end
 end

@@ -96,6 +96,42 @@
       }
     ]
   },
+	{
+	"name": "Brecconary",
+	"map_locations": [
+	  {
+		"map": "world_map",
+		"x": 412,
+		"y": 355
+	  }
+	],
+	"sections": [
+	  {
+		"name": "Purchase Bamboo Pole",
+        "ref": "Main/Shopsanity/Purchase Bamboo Pole"
+	  },
+      {
+        "name": "Purchase Club",
+        "ref": "Main/Shopsanity/Purchase Club"
+      },
+      {
+        "name": "Purchase Copper Sword",
+        "ref": "Main/Shopsanity/Purchase Copper Sword"
+	  },
+	  {
+        "name": "Purchase Clothes",
+        "ref": "Main/Shopsanity/Purchase Clothes"
+      },
+	  {
+        "name": "Purchase Leather Armor",
+        "ref": "Main/Shopsanity/Purchase Leather Armor"
+      },
+	  {
+        "name": "Purchase Small Shield",
+        "ref": "Main/Shopsanity/Purchase Small Shield"
+      }
+	]
+	},
   {
     "name": "Swamp Cave",
     "map_locations": [
@@ -122,6 +158,34 @@
       }
     ],
     "sections": [
+			{
+        "name": "Purchase Club",
+        "ref": "Main/Shopsanity/Purchase Club"
+      },
+			{
+        "name": "Purchase Copper Sword",
+        "ref": "Main/Shopsanity/Purchase Copper Sword"
+      },
+			{
+        "name": "Purchase Hand Axe",
+        "ref": "Main/Shopsanity/Purchase Hand Axe"
+      },
+			{
+        "name": "Purchase Leather Armor",
+        "ref": "Main/Shopsanity/Purchase Leather Armor"
+      },
+			{
+        "name": "Purchase Chain Mail",
+        "ref": "Main/Shopsanity/Purchase Chain Mail"
+      },
+			{
+        "name": "Purchase Half Plate",
+        "ref": "Main/Shopsanity/Purchase Half Plate"
+      },
+			{
+        "name": "Purchase Large Shield",
+        "ref": "Main/Shopsanity/Purchase Large Shield"
+      },
       {
         "name": "Chest 1",
         "ref": "Main/Garinham/Garinham - Chest 1"
@@ -194,6 +258,26 @@
       }
     ],
     "sections": [
+			{
+        "name": "Purchase Copper Sword",
+        "ref": "Main/Shopsanity/Purchase Copper Sword"
+      },
+			{
+        "name": "Purchase Hand Axe",
+        "ref": "Main/Shopsanity/Purchase Hand Axe"
+      },
+			{
+        "name": "Purchase Half Plate",
+        "ref": "Main/Shopsanity/Purchase Half Plate"
+      },
+			{
+        "name": "Purchase Full Plate",
+        "ref": "Main/Shopsanity/Purchase Full Plate"
+      },
+			{
+        "name": "Purchase Small Shield",
+        "ref": "Main/Shopsanity/Purchase Small Shield"
+      },
       {
         "name": "Fairy Flute",
         "ref": "Main/Kol/Fairy Flute"
@@ -254,6 +338,30 @@
       }
     ],
     "sections": [
+			{
+				"name": "Purchase Copper Sword",
+				"ref": "Main/Shopsanity/Purchase Copper Sword"
+			},
+			{
+				"name": "Purchase Hand Axe",
+				"ref": "Main/Shopsanity/Purchase Hand Axe"
+			},
+			{
+				"name": "Purchase Broad Sword",
+				"ref": "Main/Shopsanity/Purchase Broad Sword"
+			},
+			{
+				"name": "Purchase Half Plate",
+				"ref": "Main/Shopsanity/Purchase Half Plate"
+			},
+			{
+				"name": "Purchase Full Plate",
+				"ref": "Main/Shopsanity/Purchase Full Plate"
+			},
+			{
+				"name": "Purchase Magic Armor",
+				"ref": "Main/Shopsanity/Purchase Magic Armor"
+			},
       {
         "name": "Inn Chest",
         "ref": "Main/Rimuldar/Rimuldar - Inn Chest"
@@ -308,203 +416,83 @@
       }
     ]
   },
+	{
+		"name": "Cantlin",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 609,
+				"y": 835
+			}
+		],
+		"sections": [
+			{
+				"name": "Purchase Bamboo Pole",
+        "ref": "Main/Shopsanity/Purchase Bamboo Pole"
+			},
+      {
+        "name": "Purchase Club",
+        "ref": "Main/Shopsanity/Purchase Club"
+      },
+      {
+        "name": "Purchase Copper Sword",
+        "ref": "Main/Shopsanity/Purchase Copper Sword"
+			},
+			{
+        "name": "Purchase Leather Armor",
+        "ref": "Main/Shopsanity/Purchase Leather Armor"
+      },
+			{
+        "name": "Purchase Chain Mail",
+        "ref": "Main/Shopsanity/Purchase Chain Mail"
+      },
+			{
+        "name": "Purchase Large Shield",
+        "ref": "Main/Shopsanity/Purchase Large Shield"
+      },
+			{
+				"name": "Purchase Hand Axe",
+				"ref": "Main/Shopsanity/Purchase Hand Axe"
+			},
+			{
+				"name": "Purchase Broad Sword",
+				"ref": "Main/Shopsanity/Purchase Broad Sword"
+			},
+			{
+				"name": "Purchase Full Plate",
+				"ref": "Main/Shopsanity/Purchase Full Plate"
+			},
+			{
+				"name": "Purchase Magic Armor",
+				"ref": "Main/Shopsanity/Purchase Magic Armor"
+			},
+			{
+				"name": "Purchase Flame Sword",
+				"ref": "Main/Shopsanity/Purchase Flame Sword"
+			},
+			{
+				"name": "Purchase Silver Shield",
+				"ref": "Main/Shopsanity/Purchase Silver Shield"
+			}
+		]
+	},
   {
-    "name": "Shopsanity",
-    "map_locations": [
-      {
-        "map": "world_map_DUMMYPIN",
-        "x": 0,
-        "y": 990
-      }
-    ],
-    "sections": [
-      {
-        "name": "Purchased: Bamboo Pole",
-        "ref": "Main/Shopsanity/Purchased: Bamboo Pole"
-      },
-      {
-        "name": "Purchased: Club",
-        "ref": "Main/Shopsanity/Purchased: Club"
-      },
-      {
-        "name": "Purchased: Copper Sword",
-        "ref": "Main/Shopsanity/Purchased: Copper Sword"
-      },
-      {
-        "name": "Purchased: Hand Axe",
-        "ref": "Main/Shopsanity/Purchased: Hand Axe"
-      },
-      {
-        "name": "Purchased: Broad Sword",
-        "ref": "Main/Shopsanity/Purchased: Broad Sword"
-      },
-      {
-        "name": "Purchased: Flame Sword",
-        "ref": "Main/Shopsanity/Purchased: Flame Sword"
-      },
-      {
-        "name": "Purchased: Clothes",
-        "ref": "Main/Shopsanity/Purchased: Clothes"
-      },
-      {
-        "name": "Purchased: Leather Armor",
-        "ref": "Main/Shopsanity/Purchased: Leather Armor"
-      },
-      {
-        "name": "Purchased: Chain Mail",
-        "ref": "Main/Shopsanity/Purchased: Chain Mail"
-      },
-      {
-        "name": "Purchased: Half Plate",
-        "ref": "Main/Shopsanity/Purchased: Half Plate"
-      },
-      {
-        "name": "Purchased: Full Plate",
-        "ref": "Main/Shopsanity/Purchased: Full Plate"
-      },
-      {
-        "name": "Purchased: Magic Armor",
-        "ref": "Main/Shopsanity/Purchased: Magic Armor"
-      },
-      {
-        "name": "Purchased: Small Shield",
-        "ref": "Main/Shopsanity/Purchased: Small Shield"
-      },
-      {
-        "name": "Purchased: Large Shield",
-        "ref": "Main/Shopsanity/Purchased: Large Shield"
-      },
-      {
-        "name": "Purchased: Silver Shield",
-        "ref": "Main/Shopsanity/Purchased: Silver Shield"
-      }
-    ]
-  },
-  {
-    "name": "Levels",
+    "name": "Levelsanity",
     "map_locations": [
       {
         "map": "world_map",
-        "x": 990,
-        "y": 990
+        "x": 373,
+        "y": 412
       }
     ],
     "sections": [
       {
-        "name": "Level 2",
-        "ref": "Main/Levels/Level 2"
+        "name": "Level 2-9",
+				"ref": "Main/Levelsanity/Level 2-9"
       },
       {
-        "name": "Level 3",
-        "ref": "Main/Levels/Level 3"
-      },
-      {
-        "name": "Level 4",
-        "ref": "Main/Levels/Level 4"
-      },
-      {
-        "name": "Level 5",
-        "ref": "Main/Levels/Level 5"
-      },
-      {
-        "name": "Level 6",
-        "ref": "Main/Levels/Level 6"
-      },
-      {
-        "name": "Level 7",
-        "ref": "Main/Levels/Level 7"
-      },
-      {
-        "name": "Level 8",
-        "ref": "Main/Levels/Level 8"
-      },
-      {
-        "name": "Level 9",
-        "ref": "Main/Levels/Level 9"
-      },
-      {
-        "name": "Level 10",
-        "ref": "Main/Levels/Level 10"
-      },
-      {
-        "name": "Level 11",
-        "ref": "Main/Levels/Level 11"
-      },
-      {
-        "name": "Level 12",
-        "ref": "Main/Levels/Level 12"
-      },
-      {
-        "name": "Level 13",
-        "ref": "Main/Levels/Level 13"
-      },
-      {
-        "name": "Level 14",
-        "ref": "Main/Levels/Level 14"
-      },
-      {
-        "name": "Level 15",
-        "ref": "Main/Levels/Level 15"
-      },
-      {
-        "name": "Level 16",
-        "ref": "Main/Levels/Level 16"
-      },
-      {
-        "name": "Level 17",
-        "ref": "Main/Levels/Level 17"
-      },
-      {
-        "name": "Level 18",
-        "ref": "Main/Levels/Level 18"
-      },
-      {
-        "name": "Level 19",
-        "ref": "Main/Levels/Level 19"
-      },
-      {
-        "name": "Level 20",
-        "ref": "Main/Levels/Level 20"
-      },
-      {
-        "name": "Level 21",
-        "ref": "Main/Levels/Level 21"
-      },
-      {
-        "name": "Level 22",
-        "ref": "Main/Levels/Level 22"
-      },
-      {
-        "name": "Level 23",
-        "ref": "Main/Levels/Level 23"
-      },
-      {
-        "name": "Level 24",
-        "ref": "Main/Levels/Level 24"
-      },
-      {
-        "name": "Level 25",
-        "ref": "Main/Levels/Level 25"
-      },
-      {
-        "name": "Level 26",
-        "ref": "Main/Levels/Level 26"
-      },
-      {
-        "name": "Level 27",
-        "ref": "Main/Levels/Level 27"
-      },
-      {
-        "name": "Level 28",
-        "ref": "Main/Levels/Level 28"
-      },
-      {
-        "name": "Level 29",
-        "ref": "Main/Levels/Level 29"
-      },
-      {
-        "name": "Level 30",
-        "ref": "Main/Levels/Level 30"
+        "name": "Level 10+",
+        "ref": "Main/Levelsanity/Level 10+"
       }
     ]
   }

@@ -261,144 +261,70 @@
 				"chest_opened_img": "/images/npcs/shopkeep-grey.png",
         "sections": [
           {
-            "name": "Purchased: Bamboo Pole",
+            "name": "Purchase Bamboo Pole",
           },
           {
-            "name": "Purchased: Club",
+            "name": "Purchase Club",
           },
           {
-            "name": "Purchased: Copper Sword",
+            "name": "Purchase Copper Sword",
           },
           {
-            "name": "Purchased: Hand Axe",
+            "name": "Purchase Hand Axe",
           },
           {
-            "name": "Purchased: Broad Sword",
+            "name": "Purchase Broad Sword",
           },
           {
-            "name": "Purchased: Flame Sword",
+            "name": "Purchase Flame Sword",
+						"access_rules": ["magic_key"]
           },
           {
-            "name": "Purchased: Clothes",
+            "name": "Purchase Clothes",
           },
           {
-            "name": "Purchased: Leather Armor",
+            "name": "Purchase Leather Armor",
           },
           {
-            "name": "Purchased: Chain Mail",
+            "name": "Purchase Chain Mail",
           },
           {
-            "name": "Purchased: Half Plate",
+            "name": "Purchase Half Plate",
           },
           {
-            "name": "Purchased: Full Plate",
+            "name": "Purchase Full Plate",
           },
           {
-            "name": "Purchased: Magic Armor",
+            "name": "Purchase Magic Armor",
           },
           {
-            "name": "Purchased: Small Shield",
+            "name": "Purchase Small Shield",
           },
           {
-            "name": "Purchased: Large Shield",
+            "name": "Purchase Large Shield",
           },
           {
-            "name": "Purchased: Silver Shield",
+            "name": "Purchase Silver Shield",
+						"access_rules": ["magic_key"]
           }
         ]
       },
       {
-        "name": "Levels",
+        "name": "Levelsanity",
         "visibility_rules": ["levelsanity"],
 				"chest_unopened_img": "/images/npcs/king.png",
 				"chest_opened_img": "/images/npcs/king-grey.png",
         "sections": [
           {
-            "name": "Level 2"
+            "name": "Level 2-9",
+						"item_count": 8,
+						"clear_as_group": false
           },
           {
-            "name": "Level 3"
-          },
-          {
-            "name": "Level 4"
-          },
-          {
-            "name": "Level 5"
-          },
-          {
-            "name": "Level 6"
-          },
-          {
-            "name": "Level 7"
-          },
-          {
-            "name": "Level 8"
-          },
-          {
-            "name": "Level 9"
-          },
-          {
-            "name": "Level 10"
-          },
-          {
-            "name": "Level 11"
-          },
-          {
-            "name": "Level 12"
-          },
-          {
-            "name": "Level 13"
-          },
-          {
-            "name": "Level 14"
-          },
-          {
-            "name": "Level 15"
-          },
-          {
-            "name": "Level 16"
-          },
-          {
-            "name": "Level 17"
-          },
-          {
-            "name": "Level 18"
-          },
-          {
-            "name": "Level 19"
-          },
-          {
-            "name": "Level 20"
-          },
-          {
-            "name": "Level 21"
-          },
-          {
-            "name": "Level 22"
-          },
-          {
-            "name": "Level 23"
-          },
-          {
-            "name": "Level 24"
-          },
-          {
-            "name": "Level 25"
-          },
-          {
-            "name": "Level 26"
-          },
-          {
-            "name": "Level 27"
-          },
-          {
-            "name": "Level 28"
-          },
-          {
-            "name": "Level 29"
-          },
-          {
-            "name": "Level 30"
+            "name": "Level 10+",
+						"item_count": 21,
+						"clear_as_group": false,
+						"access_rules": ["magic_key"]
           }
         ]
       }
