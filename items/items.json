@@ -5,72 +5,30 @@
     "img": "images/items/ball_of_light.png",
     "codes": "ball_of_light"
   },
-{
-  "name": "Silver harp",
-  "codes": "silver_harp",
-  "type": "progressive",
-  "loop": true,
-  "allow_disabled": true,
-  "stages": [
-    {
-      "img": "images/items/silver_harp.png",
-      "codes": ["silver_harp"]
-    },
-    {
-      "img": "images/items/silver_harp_checked.png",
-      "codes": "silver_harp_checked"
-    }
-  ]
-},
-
-
+  {
+    "name": "Silver harp",
+    "codes": "silver_harp",
+    "type": "toggle",
+    "img": "images/items/silver_harp.png",
+    "codes": "silver_harp"
+  },
   {
     "name": "Staff of Rain",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": true,
-    "stages": [
-      {
-        "img": "images/items/staff_of_rain.png",
-        "codes": "staff_of_rain"
-      },
-      {
-        "img": "images/items/staff_of_rain_checked.png",
-        "codes": "staff_of_rain_checked"
-      }
-    ]
+    "type": "toggle",
+    "img": "images/items/staff_of_rain.png",
+    "codes": "staff_of_rain"
   },
   {
     "name": "Erdrick's Token",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": true,
-    "stages": [
-      {
-        "img": "images/items/erdricks_token.png",
-        "codes": "erdricks_token"
-      },
-      {
-        "img": "images/items/erdricks_token_checked.png",
-        "codes": "erdricks_token_checked"
-      }
-    ]
+    "type": "toggle",
+	"img": "images/items/erdricks_token.png",
+    "codes": "erdricks_token"
   },
   {
     "name": "Stones of Sunlight",
-    "type": "progressive",
-    "loop": true,
-    "allow_disabled": true,
-    "stages": [
-      {
-        "img": "images/items/stones_of_sunlight.png",
-        "codes": "stones_of_sunlight"
-      },
-      {
-        "img": "images/items/stones_of_sunlight_checked.png",
-        "codes": "stones_of_sunlight_checked"
-      }
-    ]
+    "type": "toggle",
+	"img": "images/items/stones_of_sunlight.png",
+    "codes": "stones_of_sunlight"
   },
   {
     "name": "Gold",
@@ -600,7 +558,7 @@
     "type": "progressive",
     "codes": ["equipment_weapon"],
     "loop": true,
-    "allow_disabled": true,
+    "allow_disabled": false,
     "stages": [
             {
         "name": "No Weapon",
@@ -650,8 +608,8 @@
     "codes": [
       "equipment_armor"
     ],
-    "loop": false,
-    "allow_disabled": true,
+    "loop": true,
+    "allow_disabled": false,
     "stages": [
             {
         "name": "No Armor",
@@ -701,8 +659,8 @@
     "codes": [
       "equipment_shield"
     ],
-    "loop": false,
-    "allow_disabled": true,
+    "loop": true,
+    "allow_disabled": false,
     "stages": [
       {
         "name": "No Shield",

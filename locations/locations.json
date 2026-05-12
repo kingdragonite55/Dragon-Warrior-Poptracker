@@ -8,7 +8,7 @@
           {
             "name": "Staff of Rain",
             "access_rules": [
-              "$silver_harp"
+              "silver_harp"
             ]
           },
           {
