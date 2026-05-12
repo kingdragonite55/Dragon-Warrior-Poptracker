@@ -24,16 +24,6 @@
                 "key": "shared_item_grid"
               }
             },
-  {
-    "type": "group",
-    "header": "GG",
-    "dock": "left",
-    "min_size": [100, 36],
-    "content": {
-      "type": "layout",
-      "key": "gg_panel"
-    }
-  },
             {
               "type": "group",
               "header": "Equipment",

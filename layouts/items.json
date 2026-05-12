@@ -5,20 +5,9 @@
     "item_width": 36,
     "item_height": 36,
     "rows": [
-      ["stones_of_sunlight", "staff_of_rain", "erdricks_token"],
-      ["rainbow_drop", "silver_harp", "gwaelins_love"],
-      ["fairy_flute", "erdricks_tablet", "magic_key"]
-    ]
-  },
-  "gg_panel": {
-    "type": "itemgrid",
-    "item_margin": "2, 4",
-    "item_width": 36,
-    "item_height": 36,
-    "rows": [
-      ["nil"],
-      ["ball_of_light"],
-      ["nil"]
+	  ["staff_of_rain", "silver_harp", "magic_key"],
+	  ["stones_of_sunlight", "rainbow_drop", "ball_of_light"],
+	  ["erdricks_token", "fairy_flute", "gwaelins_love"]
     ]
   },
 "equipment_panel": {
