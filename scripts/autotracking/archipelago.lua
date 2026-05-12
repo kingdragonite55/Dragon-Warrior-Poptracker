@@ -140,8 +140,8 @@ function onItem(index, item_id, item_name, player_number)
     end
 end
 
-function onLocationHandler(index, location_id, location_name)
-    if index < 0 then return end
+function onLocationHandler(location_id, location_name)
+    if location_id < 0 then return end
 
     -- Resolve to tracker location code/path
     local location_path = LOCATION_MAPPING[tonumber(location_id)]
