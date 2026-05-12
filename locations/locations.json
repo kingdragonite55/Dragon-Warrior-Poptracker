@@ -256,102 +256,62 @@
       },
       {
         "name": "Shopsanity",
+				"visibility_rules": ["shopsanity"],
+				"chest_unopened_img": "/images/npcs/shopkeep.png",
+				"chest_opened_img": "/images/npcs/shopkeep-grey.png",
         "sections": [
           {
             "name": "Purchased: Bamboo Pole",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Club",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Copper Sword",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Hand Axe",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Broad Sword",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Flame Sword",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Clothes",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Leather Armor",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Chain Mail",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Half Plate",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Full Plate",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Magic Armor",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Small Shield",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Large Shield",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           },
           {
             "name": "Purchased: Silver Shield",
-            "visibility_rules": [
-              "Shopsanity"
-            ]
           }
         ]
       },
       {
         "name": "Levels",
-        "visibility_rules": [ "levelsanity" ],
+        "visibility_rules": ["levelsanity"],
+				"chest_unopened_img": "/images/npcs/king.png",
+				"chest_opened_img": "/images/npcs/king-grey.png",
         "sections": [
           {
             "name": "Level 2"
