@@ -13,7 +13,10 @@
           },
           {
             "name": "Erdrick's Token",
-            "visibility_rules": ["searchsanity"]
+            "visibility_rules": ["searchsanity"],
+						"access_rules": [
+							"gwaelins_love"
+						]
           },
           {
             "name": "Rainbow Shrine",
