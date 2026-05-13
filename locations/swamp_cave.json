@@ -16,7 +16,22 @@
             "ref": "Main/Swamp Cave/Rescue Princess Gwaelin"
           }
         ]
-      }
+      },
+			{
+				"name": "Defeat Green Dragon",
+				"map_locations": [
+					{
+						"map": "swamp_cave",
+						"x": 209,
+						"y": 630
+					}
+				],
+				"sections": [
+					{
+						"ref": "Main/Monstersanity/Defeat Green Dragon"
+					}
+				]
+			}
     ]
   }
 ]

@@ -8,7 +8,8 @@
           {
             "map": "hauksness",
             "x": 447,
-            "y": 303
+            "y": 303,
+						"size": 18
           }
         ],
         "sections": [
@@ -16,7 +17,23 @@
             "ref": "Main/Hauksness/Erdrick's Armor"
           }
         ]
-      }
+      },
+			{
+				"name": "Defeat Axe Knight",
+				"map_locations": [
+					{
+						"map": "hauksness",
+						"x": 403,
+						"y": 303,
+						"size": 18
+					}
+				],
+				"sections": [
+					{
+						"ref": "Main/Monstersanity/Defeat Axe Knight"
+					}
+				]
+			}
     ]
   }
 ]

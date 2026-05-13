@@ -76,7 +76,39 @@
             "ref": "Main/Mountain Cave/Mountain Cave - Level 2 - Chest 4"
           }
         ]
-      }
+      },
+			{
+				"name": "Mountain Cave Monsters",
+				"map_locations": [
+					{
+						"map": "mountain_cave",
+						"x": 161,
+						"y": 332
+					}
+				],
+				"sections": [
+					{
+						"name": "Defeat Poltergeist",
+						"ref": "Main/Monstersanity/Defeat Poltergeist"
+					},
+					{
+						"name": "Defeat Droll",
+						"ref": "Main/Monstersanity/Defeat Droll"
+					},
+					{
+						"name": "Defeat Drakeema",
+						"ref": "Main/Monstersanity/Defeat Drakeema"
+					},
+					{
+						"name": "Defeat Skeleton",
+						"ref": "Main/Monstersanity/Defeat Skeleton"
+					},
+					{
+						"name": "Defeat Warlock",
+						"ref": "Main/Monstersanity/Defeat Warlock"
+					}
+				]
+			}
     ]
   }
 ]

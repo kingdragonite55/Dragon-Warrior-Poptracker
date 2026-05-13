@@ -9,6 +9,8 @@
         "sections": [
           {
             "name": "Staff of Rain",
+						"chest_unopened_img": "/images/npcs/wizard.png",
+						"chest_opened_img": "/images/npcs/wizard-grey.png",
             "access_rules": [
               "@Main/Rimuldar, magic_key, silver_harp"
             ]
@@ -22,6 +24,8 @@
           },
           {
             "name": "Rainbow Shrine",
+						"chest_unopened_img": "/images/npcs/wizard.png",
+						"chest_opened_img": "/images/npcs/wizard-grey.png",
             "access_rules": [
               "@Main/Rimuldar, $rainbow_shrine"
            ]
@@ -66,12 +70,16 @@
           },
           {
             "name": "Stones of Sunlight",
+						"chest_unopened_img": "/images/npcs/wizard.png",
+						"chest_opened_img": "/images/npcs/wizard-grey.png",
             "access_rules": [
               "magic_key"
             ]
           },
           {
             "name": "Return Gwaelin to Castle",
+						"chest_unopened_img": "/images/npcs/princess.png",
+						"chest_opened_img": "/images/npcs/princess-grey.png",
             "access_rules": [
               "@Main/Swamp Cave/Rescue Princess Gwaelin"
             ],
@@ -84,6 +92,8 @@
         "sections": [
           {
             "name": "Rescue Princess Gwaelin",
+						"chest_unopened_img": "/images/npcs/princess.png",
+						"chest_opened_img": "/images/npcs/princess-grey.png",
             "access_rules": [
               "magic_key, $equipment_helper|4|4|2"
             ],
@@ -185,6 +195,8 @@
           },
           {
             "name": "Defeated Dragonlord",
+						"chest_unopened_img": "/images/npcs/dragonlord_npc.png",
+						"chest_opened_img": "/images/npcs/dragonlord_npc-grey.png",
 						"access_rules": [
 							"$can_defeat_dragonlord"
 						]

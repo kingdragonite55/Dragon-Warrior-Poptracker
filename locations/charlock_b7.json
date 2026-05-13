@@ -92,8 +92,23 @@
           }
         ]
       },
+			{
+				"name": "Defeat Golem",
+				"map_locations": [
+					{
+						"map": "charlock_b7",
+						"x": 830,
+						"y": 731
+					}
+				],
+				"sections": [
+					{
+						"ref": "Main/Monstersanity/Defeat Golem"
+					}
+				]
+			},
       {
-        "name": "Defeated Dragonlord",
+        "name": "Dragonlord",
         "map_locations": [
           {
             "map": "charlock_b7",
@@ -102,7 +117,16 @@
           }
         ],
         "sections": [
+					{
+						"name": "Defeat Dragonlord 1",
+						"ref": "Main/Monstersanity/Defeat Dragonlord 1"
+					},
+					{
+						"name": "Defeat Dragonlord 2",
+						"ref": "Main/Monstersanity/Defeat Dragonlord 2"
+					},
           {
+						"name": "Defeated Dragonlord",
             "ref": "Main/Charlock Castle/Defeated Dragonlord"
           }
         ]

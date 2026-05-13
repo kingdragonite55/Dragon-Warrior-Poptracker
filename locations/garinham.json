@@ -58,25 +58,31 @@
 				],
 				"sections": [
 					{
+						"name": "Purchase Club",
 						"ref": "Main/Shopsanity/Purchase Club"
 					},
 					{
-						"ref": "Main/Shopsanity/Purchase Copper Sword"  
+						"name": "Purchase Copper Sword",
+						"ref": "Main/Shopsanity/Purchase Copper Sword"
 					},
 					{
 						"ref": "Main/Shopsanity/Purchase Hand Axe"  
 					},
 					{
-						"ref": "Main/Shopsanity/Purchase Leather Armor"  
+						"name": "Purchase Leather Armor",
+						"ref": "Main/Shopsanity/Purchase Leather Armor"
 					},
 					{
-						"ref": "Main/Shopsanity/Purchase Chain Mail"  
+						"name": "Purchase Chain Mail",
+						"ref": "Main/Shopsanity/Purchase Chain Mail"
 					},
 					{
-						"ref": "Main/Shopsanity/Purchase Half Plate"  
+						"name": "Purchase Half Plate",
+						"ref": "Main/Shopsanity/Purchase Half Plate"
 					},
 					{
-						"ref": "Main/Shopsanity/Purchase Large Shield"  
+						"name": "Purchase Large Shield",
+						"ref": "Main/Shopsanity/Purchase Large Shield"
 					},
 				]
 			}

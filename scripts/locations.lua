@@ -11,7 +11,7 @@ Tracker:AddLocations("locations/world_map.json")
 -- Sub Maps
 Tracker:AddLocations("locations/brecconary.json")
 Tracker:AddLocations("locations/cantlin.json")
--- Tracker:AddLocations("locations/charlock_1f.json") Currently Unused
+Tracker:AddLocations("locations/charlock_1f.json")
 -- Tracker:AddLocations("locations/charlock_b1.json") Currently Unused
 Tracker:AddLocations("locations/charlock_b7.json")
 Tracker:AddLocations("locations/charlock_connections.json")
