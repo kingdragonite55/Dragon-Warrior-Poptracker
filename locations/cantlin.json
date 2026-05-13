@@ -1,0 +1,85 @@
+[
+  {
+    "name": "cantlin",
+    "children": [
+			{
+				"name": "Weak Shopkeeper",
+				"map_locations": [
+					{
+						"map": "cantlin",
+						"x": 343,
+						"y": 96,
+						"size": 13,
+						"border_thickness": 3
+					}
+				],
+				"sections": [
+					{
+						"ref": "Main/Shopsanity/Purchase Bamboo Pole"
+					},
+					{
+						"ref": "Main/Shopsanity/Purchase Club"
+					},
+					{
+						"ref": "Main/Shopsanity/Purchase Copper Sword"  
+					},
+					{
+						"ref": "Main/Shopsanity/Purchase Leather Armor"  
+					},
+					{
+						"ref": "Main/Shopsanity/Purchase Chain Mail"  
+					},
+					{
+						"ref": "Main/Shopsanity/Purchase Large Shield"  
+					}
+				]
+			},
+			{
+				"name": "Strong Shopkeeper",
+				"map_locations": [
+					{
+						"map": "cantlin",
+						"x": 424,
+						"y": 431,
+						"size": 13,
+						"border_thickness": 3
+					}
+				],
+				"sections": [
+					{
+						"ref": "Main/Shopsanity/Purchase Hand Axe"
+					},
+					{
+						"ref": "Main/Shopsanity/Purchase Broad Sword"
+					},
+					{
+						"ref": "Main/Shopsanity/Purchase Full Plate"  
+					},
+					{
+						"ref": "Main/Shopsanity/Purchase Magic Armor"  
+					}
+				]
+			},
+			{
+				"name": "Magic Key Shopkeeper",
+				"map_locations": [
+					{
+						"map": "cantlin",
+						"x": 408,
+						"y": 209,
+						"size": 13,
+						"border_thickness": 3
+					}
+				],
+				"sections": [
+					{
+						"ref": "Main/Shopsanity/Purchase Flame Sword"
+					},
+					{
+						"ref": "Main/Shopsanity/Purchase Silver Shield"
+					}
+				]
+			}
+		]
+  }
+]

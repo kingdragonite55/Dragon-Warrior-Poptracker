@@ -1,6 +1,6 @@
 [
   {
-    "name": "Main",
+    "name": "kol",
     "children": [
       {
         "name": "Fairy Flute",
@@ -16,7 +16,39 @@
             "ref": "Main/Kol/Fairy Flute"
           }
         ]
-      }
+      },
+			{
+				"name": "Shopkeeper",
+				"map_locations": [
+					{
+						"map": "kol",
+						"x": 522,
+						"y": 332
+					}
+				],
+				"sections": [
+					{
+						"name": "Purchase Copper Sword",
+						"ref": "Main/Shopsanity/Purchase Copper Sword"
+					},
+					{
+						"name": "Purchase Hand Axe",
+						"ref": "Main/Shopsanity/Purchase Hand Axe"
+					},
+					{
+						"name": "Purchase Half Plate",
+						"ref": "Main/Shopsanity/Purchase Half Plate"
+					},
+					{
+						"name": "Purchase Full Plate",
+						"ref": "Main/Shopsanity/Purchase Full Plate"
+					},
+					{
+						"name": "Purchase Small Shield",
+						"ref": "Main/Shopsanity/Purchase Small Shield"
+					}
+				]
+			}
     ]
   }
 ]
