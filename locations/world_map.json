@@ -132,6 +132,30 @@
       }
 	]
 	},
+	{
+		"name": "Brecconary Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 300,
+				"y": 355
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Slime",
+				"ref": "Main/Monstersanity/Defeat Slime"
+			},
+			{
+				"name": "Defeat Red Slime",
+				"ref": "Main/Monstersanity/Defeat Red Slime"
+			},
+			{
+				"name": "Defeat Drakee",
+				"ref": "Main/Monstersanity/Defeat Drakee"
+			}
+		]
+	},
   {
     "name": "Swamp Cave",
     "map_locations": [
@@ -142,6 +166,10 @@
       }
     ],
     "sections": [
+			{
+				"name": "Defeat Green Dragon",
+				"ref": "Main/Monstersanity/Defeat Green Dragon"
+			},
       {
         "name": "Save the Princess",
         "ref": "Main/Swamp Cave/Rescue Princess Gwaelin"
@@ -229,9 +257,41 @@
       {
         "name": "Level 3 - Chest 2",
         "ref": "Main/Garin's Grave/Garin's Grave - Level 3 - Chest 2"
-      }
+      },
+			{
+				"name": "Defeat Specter",
+				"ref": "Main/Monstersanity/Defeat Specter"
+			},
+			{
+				"name": "Defeat Druinlord",
+				"ref": "Main/Monstersanity/Defeat Druinlord"
+			},
+			{
+				"name": "Defeat Drollmagi",
+				"ref": "Main/Monstersanity/Defeat Drollmagi"
+			},
     ]
   },
+	{
+		"name": "Garinham Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 135,
+				"y": 170
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Ghost",
+				"ref": "Main/Monstersanity/Defeat Ghost"
+			},
+			{
+				"name": "Defeat Magician",
+				"ref": "Main/Monstersanity/Defeat Magician"
+			}
+		]
+	},
   {
     "name": "Erdrick's Cave",
     "map_locations": [
@@ -284,6 +344,26 @@
       }
     ]
   },
+	{
+		"name": "Kol Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 800,
+				"y": 150
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Magidrakee",
+				"ref": "Main/Monstersanity/Defeat Magidrakee"
+			},
+			{
+				"name": "Defeat Scorpion",
+				"ref": "Main/Monstersanity/Defeat Scorpion"
+			}
+		]
+	},
   {
     "name": "Charlock Castle",
     "map_locations": [
@@ -322,6 +402,34 @@
         "name": "Dragonlord's Lair - Chest 6",
         "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 6"
       },
+			{
+				"name": "Defeat Blue Dragon",
+				"ref": "Main/Monstersanity/Defeat Blue Dragon"
+			},
+			{
+				"name": "Defeat Stoneman",
+				"ref": "Main/Monstersanity/Defeat Stoneman"
+			},
+			{
+				"name": "Defeat Armored Knight",
+				"ref": "Main/Monstersanity/Defeat Armored Knight"
+			},
+			{
+				"name": "Defeat Red Dragon",
+				"ref": "Main/Monstersanity/Defeat Red Dragon"
+			},
+			{
+				"name": "Defeat Golem",
+				"ref": "Main/Monstersanity/Defeat Golem"
+			},
+			{
+				"name": "Defeat Dragonlord 1",
+				"ref": "Main/Monstersanity/Defeat Dragonlord 1"
+			},
+			{
+				"name": "Defeat Dragonlord 2",
+				"ref": "Main/Monstersanity/Defeat Dragonlord 2"
+			},
       {
         "name": "Defeated Dragonlord",
         "ref": "Main/Charlock Castle/Defeated Dragonlord"
@@ -368,6 +476,38 @@
       }
     ]
   },
+	{
+		"name": "Rimuldar Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 720,
+				"y": 510
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Metal Scorpion",
+				"ref": "Main/Monstersanity/Defeat Metal Scorpion"
+			},
+			{
+				"name": "Defeat Wolf",
+				"ref": "Main/Monstersanity/Defeat Wolf"
+			},
+			{
+				"name": "Defeat Wraith",
+				"ref": "Main/Monstersanity/Defeat Wraith"
+			},
+			{
+				"name": "Defeat Wolflord",
+				"ref": "Main/Monstersanity/Defeat Wolflord"
+			},
+			{
+				"name": "Defeat Goldman",
+				"ref": "Main/Monstersanity/Defeat Goldman"
+			},
+		]
+	},
   {
     "name": "Mountain Cave",
     "map_locations": [
@@ -397,7 +537,31 @@
       {
         "name": "Level 2 - Chest 4",
         "ref": "Main/Mountain Cave/Mountain Cave - Level 2 - Chest 4"
-      }
+      },
+			{
+				"name": "Defeat Druin",
+				"ref": "Main/Monstersanity/Defeat Druin"
+			},
+			{
+				"name": "Defeat Poltergeist",
+				"ref": "Main/Monstersanity/Defeat Poltergeist"
+			},
+			{
+				"name": "Defeat Droll",
+				"ref": "Main/Monstersanity/Defeat Droll"
+			},
+			{
+				"name": "Defeat Drakeema",
+				"ref": "Main/Monstersanity/Defeat Drakeema"
+			},
+			{
+				"name": "Defeat Skeleton",
+				"ref": "Main/Monstersanity/Defeat Skeleton"
+			},
+			{
+				"name": "Defeat Warlock",
+				"ref": "Main/Monstersanity/Defeat Warlock"
+			}
     ]
   },
   {
@@ -410,7 +574,11 @@
       }
     ],
     "sections": [
-      {
+			{
+				"name": "Defeat Axe Knight",
+				"ref": "Main/Monstersanity/Defeat Axe Knight"
+			},
+			{
         "name": "Erdrick's Armor",
         "ref": "Main/Hauksness/Erdrick's Armor"
       }
@@ -473,6 +641,58 @@
 			{
 				"name": "Purchase Silver Shield",
 				"ref": "Main/Shopsanity/Purchase Silver Shield"
+			}
+		]
+	},
+	{
+		"name": "Cantlin Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 480,
+				"y": 905
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Metal Slime",
+				"ref": "Main/Monstersanity/Defeat Metal Slime"
+			},
+			{
+				"name": "Defeat Wyvern",
+				"ref": "Main/Monstersanity/Defeat Wyvern"
+			},
+			{
+				"name": "Defeat Rogue Scorpion",
+				"ref": "Main/Monstersanity/Defeat Rogue Scorpion"
+			},
+			{
+				"name": "Defeat Wraith Knight",
+				"ref": "Main/Monstersanity/Defeat Wraith Knight"
+			},
+			{
+				"name": "Defeat Knight",
+				"ref": "Main/Monstersanity/Defeat Knight"
+			},
+			{
+				"name": "Defeat Magiwyvern",
+				"ref": "Main/Monstersanity/Defeat Magiwyvern"
+			},
+			{
+				"name": "Defeat Demon Knight",
+				"ref": "Main/Monstersanity/Defeat Demon Knight"
+			},
+			{
+				"name": "Defeat Werewolf",
+				"ref": "Main/Monstersanity/Defeat Werewolf"
+			},
+			{
+				"name": "Defeat Starwyvern",
+				"ref": "Main/Monstersanity/Defeat Starwyvern"
+			},
+			{
+				"name": "Defeat Wizard",
+				"ref": "Main/Monstersanity/Defeat Wizard"
 			}
 		]
 	},

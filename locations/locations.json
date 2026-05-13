@@ -236,7 +236,7 @@
       },
 			{
 				"name": "Cantlin",
-				"access_rules": "$equipment_helper|4|4|2"
+				"access_rules": "magic_key, $equipment_helper|4|4|2"
 			},
       {
         "name": "Shopsanity",
@@ -318,7 +318,172 @@
 						"access_rules": ["magic_key, $equipment_helper|3|3|2"]
           }
         ]
-      }
+      },
+			{
+				"name": "Monstersanity",
+				"visibility_rules": ["monstersanity"],
+				"chest_unopened_img": "/images/npcs/slime.png",
+				"chest_opened_img": "/images/npcs/slime-grey.png",
+				"sections": [
+					{
+						"name": "Defeat Slime"
+					},
+					{
+						"name": "Defeat Red Slime"
+					},
+					{
+						"name": "Defeat Drakee"
+					},
+					{
+						"name": "Defeat Magidrakee",
+						"access_rules": ["@Main/Kol"]
+					},
+					{
+						"name": "Defeat Scorpion",
+						"access_rules": ["@Main/Kol"]
+					},
+					{
+						"name": "Defeat Ghost",
+						"access_rules": ["@Main/Garinham"]
+					},
+					{
+						"name": "Defeat Magician",
+						"access_rules": ["@Main/Garinham"]
+					},
+					{
+						"name": "Defeat Druin",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Poltergeist",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Droll",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Drakeema",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Skeleton",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Warlock",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Green Dragon",
+						"access_rules": ["@Main/Swamp Cave/Rescue Princess Gwaelin"]
+					},
+					{
+						"name": "Defeat Axe Knight",
+						"access_rules": ["@Main/Hauksness"]
+					},
+					{
+						"name": "Defeat Metal Scorpion",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Wolf",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Wraith",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Wolflord",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Goldman",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Metal Slime",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Specter",
+						"access_rules": ["@Main/Garin's Grave"]
+					},
+					{
+						"name": "Defeat Druinlord",
+						"access_rules": ["@Main/Garin's Grave"]
+					},
+					{
+						"name": "Defeat Drollmagi",
+						"access_rules": ["@Main/Garin's Grave"]
+					},
+					{
+						"name": "Defeat Wyvern",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Rogue Scorpion",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Wraith Knight",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Knight",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Magiwyvern",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Demon Knight",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Werewolf",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Starwyvern",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Wizard",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Blue Dragon",
+						"access_rules": ["@Main/Charlock Castle"]
+					},
+					{
+						"name": "Defeat Stoneman",
+						"access_rules": ["@Main/Charlock Castle"]
+					},
+					{
+						"name": "Defeat Armored Knight",
+						"access_rules": ["@Main/Charlock Castle"]
+					},
+					{
+						"name": "Defeat Red Dragon",
+						"access_rules": ["@Main/Charlock Castle"]
+					},
+					{
+						"name": "Defeat Golem",
+						"access_rules": ["@Main/Charlock Castle/Defeated Dragonlord"]
+					},
+					{
+						"name": "Defeat Dragonlord 1",
+						"access_rules": ["@Main/Charlock Castle/Defeated Dragonlord"]
+					},
+					{
+						"name": "Defeat Dragonlord 2",
+						"access_rules": ["@Main/Charlock Castle/Defeated Dragonlord"]
+					},
+				]
+			}
     ]
   }
 ]
