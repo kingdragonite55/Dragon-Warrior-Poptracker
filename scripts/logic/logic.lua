@@ -4,9 +4,14 @@ Tracker.AllowDeferredLogicUpdate = true
 -- Define basic logic helpers for use in locations.json access_rules
 
 function has(code)
-  return Tracker:ProviderCountForCode(code) > 0
+	return Tracker:ProviderCountForCode(code) > 0
 end
 
+function has_equip_level(equipment, count)
+	equipment = Tracker:FindObjectForCode(equipment)
+	count = tonumber(count)
+	return equipment.CurrentStage >= count
+end
 -- === Key Items ===
 
 hasprincess = function()
