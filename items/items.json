@@ -7,7 +7,6 @@
   },
   {
     "name": "Silver harp",
-    "codes": "silver_harp",
     "type": "toggle",
     "img": "images/items/silver_harp.png",
     "codes": "silver_harp"
@@ -21,7 +20,7 @@
   {
     "name": "Erdrick's Token",
     "type": "toggle",
-	"img": "images/items/erdricks_token.png",
+		"img": "images/items/erdricks_token.png",
     "codes": "erdricks_token"
   },
   {
@@ -556,14 +555,14 @@
   {
     "name": "Current Weapon",
     "type": "progressive",
-    "codes": ["equipment_weapon"],
+    "codes": "equipment_weapon",
     "loop": true,
     "allow_disabled": false,
     "stages": [
             {
         "name": "No Weapon",
         "img": "images/items/weapon_none.png",
-         "codes": "equipment_weapon"
+        "codes": "equipment_weapon"
       },
       {
         "name": "Bamboo Pole",

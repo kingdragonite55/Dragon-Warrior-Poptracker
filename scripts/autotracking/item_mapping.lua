@@ -1,8 +1,8 @@
 ITEM_MAPPING = {
 
-    [0xE20] = {"weapon_chain", "progressive"},
-    [0xE04] = {"armor_chain", "progressive"},
-    [0xE01] = {"shield_chain", "progressive"},
+    [0xE20] = {"equipment_weapon", "progressive"},
+    [0xE04] = {"equipment_armor", "progressive"},
+    [0xE01] = {"equipment_shield", "progressive"},
 
     -- Key / progression items
     [0x5] = {"fairy_flute", "toggle"},

@@ -7,7 +7,6 @@ function has(code)
   return Tracker:ProviderCountForCode(code) > 0
 end
 
-
 -- === Key Items ===
 
 hasprincess = function()
@@ -25,7 +24,27 @@ function rainbow_shrine()
 	end
 end
 
+function erdricks_sword()
+	if (Tracker:FindObjectForCode("equipment_weapon").CurrentStage == 7) or has("erdricks_sword") then
+		return true
+	end
+end
 
+function erdricks_armor()
+	if (Tracker:FindObjectForCode("equipment_armor").CurrentStage == 7) or has("erdricks_armor") then
+		return true
+	end
+end
+
+function can_defeat_dragonlord()
+	if has("shopsanity") then
+		return equipment_helper(7, 7, 3)
+	else
+		if erdricks_sword() then
+			return erdricks_armor() or not has("searchsanity")
+		end
+	end
+end
 
 -- Progressive Gear 
 function WeaponLevel()
@@ -38,6 +57,14 @@ end
 
 function ShieldLevel()
     return Tracker:ProviderCountForCode("shield") or 0
+end
+
+function equipment_helper(weapon_count, armor_count, shield_count)
+	if not has("shopsanity") then
+		return true
+	else
+		return has_equip_level("equipment_weapon", weapon_count) and has_equip_level("equipment_armor", armor_count) and has_equip_level("equipment_shield", shield_count)
+	end
 end
 
 -- Options 
