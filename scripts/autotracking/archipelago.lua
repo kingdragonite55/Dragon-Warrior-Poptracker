@@ -121,23 +121,37 @@ end
 
 function onItem(index, item_id, item_name, player_number)
     if index <= CUR_INDEX then return end
-    if player_number ~= Archipelago.PlayerNumber then return end
+    local is_local = player_number == Archipelago.PlayerNumber
     CUR_INDEX = index
 
     local mapped = ITEM_MAPPING[item_id]
     if mapped then
         SetItem(mapped[1], mapped[2])
     end
+	
+	-- Erdrick's Sword handling
+	if item_id == 0xFF then
+		local sword = Tracker:FindObjectForCode("equipment_weapon")
+		sword.CurrentStage = 7
+	end
+	
+	-- Erdrick's Armor handling
+	if item_id == 0xFE then
+		local armor = Tracker:FindObjectForCode("equipment_armor")
+		armor.CurrentStage = 7
+	end
 
-    -- Equipment dock stages
-    local alt_code = EQUIPMENT_UPGRADES[item_name]
-    if alt_code then
-        local dock_item = Tracker:FindObjectForCode(alt_code)
-        if dock_item then
-            dock_item.CurrentStage = (dock_item.CurrentStage or 0) + 1
-            dock_item.Active = true
-        end
-    end
+    ---- I did something that makes uncommenting this function break the pack (somehow)
+	---- So just don't do that, equipment tracking works fine already
+	-- Equipment dock stages
+    -- local alt_code = EQUIPMENT_UPGRADES[item_name]
+    -- if alt_code then
+        -- local dock_item = Tracker:FindObjectForCode(alt_code)
+        -- if dock_item then
+			-- print(alt_code)
+            -- dock_item.CurrentStage = dock_item.CurrentStage + 1
+        -- end
+    -- end
 end
 
 function onLocationHandler(location_id, location_name)
@@ -201,19 +215,14 @@ function onLocationHandler(location_id, location_name)
 
     if not location_path then return end
 
-    -- Harp turn-in logic: flip image when staff location is completed
-    if location_id == 0x0D0304 or tonumber(location_id) == 0x0D0304 then
-        local harp = Tracker:FindObjectForCode("silver_harp")
-        if harp and harp.CurrentStage ~= 2 then
-            harp.CurrentStage = 2
-            harp.Active = true
-        end
-    end
-
     -- Normal location marking (map dots / chest counts)
     local obj = Tracker:FindObjectForCode(location_path)
     if obj then
-        obj.AvailableChestCount = 0
+		if obj.AvailableChestCount > 1 then
+			obj.AvailableChestCount = obj.AvailableChestCount - 1
+        else
+			obj.AvailableChestCount = 0
+		end
         local parent = obj.Parent
         if parent then parent:UpdateVisibility() end
     end

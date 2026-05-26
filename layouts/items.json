@@ -16,9 +16,9 @@
   "item_width": 36,
   "item_height": 36,
   "rows": [
-    ["equipment_weapon"],
-    ["equipment_armor"],
-    ["equipment_shield"]
+    ["equipment_weapon", "fighters_ring"],
+    ["equipment_armor", "dragon_scale"],
+    ["equipment_shield", "cursed_necklace"]
   ]
 },
 

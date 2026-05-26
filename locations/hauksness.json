@@ -1,35 +1,24 @@
 [
   {
-    "name": "Main",
+    "name": "Hauksness Map",
     "children": [
-      {
-        "name": "Erdrick's Armor",
-        "map_locations": [
+			{
+				"name": "Hauksness",
+				"map_locations": [
           {
             "map": "hauksness",
-            "x": 447,
-            "y": 303,
+            "x": 448,
+            "y": 306,
 						"size": 18
           }
         ],
-        "sections": [
-          {
-            "ref": "Main/Hauksness/Erdrick's Armor"
-          }
-        ]
-      },
-			{
-				"name": "Defeat Axe Knight",
-				"map_locations": [
-					{
-						"map": "hauksness",
-						"x": 403,
-						"y": 303,
-						"size": 18
-					}
-				],
 				"sections": [
 					{
+						"name": "Erdrick's Armor",
+            "ref": "Main/Hauksness/Erdrick's Armor"
+          },
+					{
+						"name": "Defeat Axe Knight",
 						"ref": "Main/Monstersanity/Defeat Axe Knight"
 					}
 				]

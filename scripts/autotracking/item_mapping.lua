@@ -23,7 +23,7 @@ ITEM_MAPPING = {
 
     -- Cursed items
     [0x9] = {"cursed_belt", "toggle"},
-    [0xB] = {"death_necklace", "toggle"},
+    [0xB] = {"cursed_necklace", "toggle"},
 
     -- Spam stoppers / filler
     [0xD1] = {"gold", "consumable"},

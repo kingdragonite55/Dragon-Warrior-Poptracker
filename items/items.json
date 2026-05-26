@@ -682,5 +682,29 @@
         "codes": "equipment_silver_shield"
       }
     ]
-  }
+  },
+	{
+		"name": "Dragon Scale",
+		"type": "toggle",
+		"img": "images/items/dragon_scale.png",
+		"codes": "dragon_scale"
+	},
+	{
+		"name": "Fighter's Ring",
+		"type": "toggle",
+		"img": "images/items/fighters_ring.png",
+		"codes": "fighters_ring"
+	},
+	{
+		"name": "Cursed Necklace",
+		"type": "toggle",
+		"img": "images/items/cursed_necklace.png",
+		"codes": "cursed_necklace"
+	},
+	{
+		"name": "Cursed Belt",
+		"type": "toggle",
+		"img": "images/items/cursed_belt.png",
+		"codes": "cursed_belt"
+	}
 ]

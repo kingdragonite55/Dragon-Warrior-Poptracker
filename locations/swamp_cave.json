@@ -1,6 +1,6 @@
 [
   {
-    "name": "Main",
+    "name": "Swamp Cave Map",
     "children": [
       {
         "name": "Save the Princess",
@@ -22,8 +22,8 @@
 				"map_locations": [
 					{
 						"map": "swamp_cave",
-						"x": 209,
-						"y": 630
+						"x": 181,
+						"y": 485
 					}
 				],
 				"sections": [

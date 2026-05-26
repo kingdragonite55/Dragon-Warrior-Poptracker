@@ -1,6 +1,6 @@
 [
   {
-    "name": "Main",
+    "name": "Garin's Grave Map",
     "children": [
       {
         "name": "Level 1 - Chest 1",
@@ -76,7 +76,31 @@
             "ref": "Main/Garin's Grave/Garin's Grave - Level 3 - Chest 2"
           }
         ]
-      }
+      },
+			{
+				"name": "Garin's Grave Monsters",
+				"map_locations": [
+					{
+						"map": "garins_grave",
+						"x": 249,
+						"y": 389
+					}
+				],
+				"sections": [
+					{
+						"name": "Defeat Specter",
+						"ref": "Main/Monstersanity/Defeat Specter"
+					},
+					{
+						"name": "Defeat Druinlord",
+						"ref": "Main/Monstersanity/Defeat Druinlord"
+					},
+					{
+						"name": "Defeat Drollmagi",
+						"ref": "Main/Monstersanity/Defeat Drollmagi"
+					}
+				]
+			}
     ]
   }
 ]

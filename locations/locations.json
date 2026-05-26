@@ -103,7 +103,9 @@
       },
       {
         "name": "Garinham",
-				"access_rules": "$equipment_helper|2|2|1",
+				"access_rules": [
+					"$equipment_helper|2|2|1"
+				],
         "sections": [
           {
             "name": "Garinham - Chest 1",
@@ -205,7 +207,9 @@
       },
       {
         "name": "Rimuldar",
-				"access_rules": "$equipment_helper|3|3|1",
+				"access_rules": [
+					"$equipment_helper|3|3|1"
+				],
         "sections": [
           {
             "name": "Rimuldar - Inn Chest",
@@ -238,7 +242,9 @@
       },
       {
         "name": "Hauksness",
-				"access_rules": "$equipment_helper|5|5|3",
+				"access_rules": [
+					"$equipment_helper|5|5|3"
+				],
         "sections": [
           {
             "name": "Erdrick's Armor",
@@ -248,7 +254,9 @@
       },
 			{
 				"name": "Cantlin",
-				"access_rules": "magic_key, $equipment_helper|4|4|2"
+				"access_rules": [
+					"magic_key, $equipment_helper|4|4|2"
+				]
 			},
       {
         "name": "Shopsanity",
@@ -327,7 +335,9 @@
             "name": "Level 10+",
 						"item_count": 21,
 						"clear_as_group": false,
-						"access_rules": ["magic_key, $equipment_helper|3|3|2"]
+						"access_rules": [
+							"magic_key, $equipment_helper|3|3|2"
+						]
           }
         ]
       },
@@ -415,10 +425,6 @@
 						"access_rules": ["@Main/Rimuldar"]
 					},
 					{
-						"name": "Defeat Metal Slime",
-						"access_rules": ["@Main/Cantlin"]
-					},
-					{
 						"name": "Defeat Specter",
 						"access_rules": ["@Main/Garin's Grave"]
 					},
@@ -429,6 +435,10 @@
 					{
 						"name": "Defeat Drollmagi",
 						"access_rules": ["@Main/Garin's Grave"]
+					},
+					{
+						"name": "Defeat Metal Slime",
+						"access_rules": ["@Main/Cantlin"]
 					},
 					{
 						"name": "Defeat Wyvern",

@@ -68,7 +68,9 @@ function equipment_helper(weapon_count, armor_count, shield_count)
 	if not has("shopsanity") then
 		return true
 	else
-		return has_equip_level("equipment_weapon", weapon_count) and has_equip_level("equipment_armor", armor_count) and has_equip_level("equipment_shield", shield_count)
+		return has_equip_level("equipment_weapon", weapon_count) 
+		       and has_equip_level("equipment_armor", armor_count) 
+		       and has_equip_level("equipment_shield", shield_count)
 	end
 end
 
