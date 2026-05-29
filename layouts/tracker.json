@@ -50,48 +50,6 @@
                 "key": "option_toggles"
               }
             },
-{
-  "type": "group",
-  "header": "Shopsanity",
-  "dock": "left",
-  "min_size": [180, 100],
-  "visible": "@shopsanity",
-  "content": {
-    "type": "layout",
-    "key": "shopsanity_panel"
-
-             }
-            },
-
-{
-  "type": "group",
-  "header": "Monstersanity",
-  "dock": "left",
-  "min_size": [180, 100],
-  "visible": "@monstersanity",
-  "content": {
-    "type": "layout",
-    "key": "monstersanity_panel"
-             }
-            },
-
-
-{
-  "type": "group",
-  "header": "Dragon Lord",
-  "dock": "left",
-  "min_size": [180, 100],
-  "content": {
-    "type": "layout",
-    "key": "dragonlord_panel"
-
-
-
-
-
-
-              }
-            }
           ]
         },
         {

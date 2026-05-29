@@ -140,18 +140,6 @@ function onItem(index, item_id, item_name, player_number)
 		local armor = Tracker:FindObjectForCode("equipment_armor")
 		armor.CurrentStage = 7
 	end
-
-    ---- I did something that makes uncommenting this function break the pack (somehow)
-	---- So just don't do that, equipment tracking works fine already
-	-- Equipment dock stages
-    -- local alt_code = EQUIPMENT_UPGRADES[item_name]
-    -- if alt_code then
-        -- local dock_item = Tracker:FindObjectForCode(alt_code)
-        -- if dock_item then
-			-- print(alt_code)
-            -- dock_item.CurrentStage = dock_item.CurrentStage + 1
-        -- end
-    -- end
 end
 
 function onLocationHandler(location_id, location_name)
@@ -170,48 +158,6 @@ function onLocationHandler(location_id, location_name)
             end
         end
     end
-
-    -- Shopsanity Panel:
-    -- Trigger off the leaf segment of the resolved path (best) or the provided name.
-    do
-        local leaf = nil
-        if type(location_path) == "string" then
-            leaf = location_path:match("([^/]+)$")
-        end
-        if not leaf or leaf == "" then
-            leaf = location_name or (type(location_id) == "string" and location_id) or ""
-        end
-
-        local code = ToItemCodeFromPurchaseLeaf(leaf)
-        if code then
-            MarkPanelItemAcquired(code)
-        end
-    end
-
-    -- Monstersanity + Dragonlord panel (UI grids)
-    do
-        local leaf = nil
-        if type(location_path) == "string" then
-            leaf = location_path:match("([^/]+)$")
-        end
-        if not leaf or leaf == "" then
-            leaf = location_name or (type(location_id) == "string" and location_id) or ""
-        end
-
-        local mon = leaf:match("^Defeated%s+(.+)$")
-        if mon and mon ~= "Dragonlord" then
-            local code = mon:lower()
-            code = code:gsub("['’]", "")
-            code = code:gsub("[^%w]+", "_")
-            code = code:gsub("_+", "_")
-            code = code:gsub("^_", ""):gsub("_$", "")
-
-            local obj = Tracker:FindObjectForCode(code)
-            if obj then obj.Active = true end
-        end
-    end
-
-
 
     if not location_path then return end
 
@@ -286,3 +232,4 @@ end
 Archipelago:AddItemHandler("itemHandler", onItem)
 Archipelago:AddLocationHandler("locationHandler", onLocationHandler)
 Archipelago:AddClearHandler("clearHandler", onClearHandler)
+Archipelago:AddBouncedHandler("bounceHandler", onBounce)
