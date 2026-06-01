@@ -4,6 +4,7 @@
 local ITEM_MAPPING     = require "autotracking.item_mapping"
 local LOCATION_MAPPING = require "autotracking.location_mapping"
 local OPTION_MAPPING   = require "autotracking.option_mapping"
+local TAB_MAPPING      = require "autotracking.tab_mapping"
 
 CUR_INDEX = -1
 AP_INDEX  = -1
@@ -90,6 +91,8 @@ function ClearItems(slot_data)
     -- Auto-toggle option buttons from SlotData.
     -- option_mapping.lua in this pack is "slotdata_key -> tracker_code OR {tracker_code,...}"
     local opts = slot_data or SAVED_SLOT_DATA or {}
+	print("%s", dump(slot_data))
+
     for key, mapped in pairs(OPTION_MAPPING) do
         local isEnabled = (opts[key] == 1) or (opts[key] == 50) or (opts[key] == true)
 
@@ -103,6 +106,16 @@ function ClearItems(slot_data)
             if obj and obj.Type == "toggle" then obj.Active = isEnabled end
         end
     end
+	
+	-- Get correct levelsanity check counts. Currently broken for some reason
+	if slot_data["levelsanity_range"] then
+		local levelsanity_range = tonumber(slot_data["levelsanity_range"])
+		levelsanity_low = Tracker:FindObjectForCode("@Main/Levelsanity/Level 2-9")
+		levelsanity_high = Tracker:FindObjectForCode("@Main/Levelsanity/Level 10+")
+		levelsanity_low.AvailableChestCount = math.min(levelsanity_range, 8)
+		levelsanity_high.AvailableChestCount = math.max(0, levelsanity_range - 9)
+		-- levelsanity_high:UpdateVisibility()
+	end
 end
 
 local function SetItem(code, type)
@@ -170,7 +183,9 @@ function onLocationHandler(location_id, location_name)
 			obj.AvailableChestCount = 0
 		end
         local parent = obj.Parent
-        if parent then parent:UpdateVisibility() end
+        if parent then
+			parent:UpdateVisibility() 
+		end
     end
 end
 
@@ -186,6 +201,47 @@ function reset_all_locations()
             end
         end
     end
+end
+
+function dump(o, depth)
+    if depth == nil then
+        depth = 0
+    end
+    if type(o) == 'table' then
+        local tabs = ('\t'):rep(depth)
+        local tabs2 = ('\t'):rep(depth + 1)
+        local s = '{\n'
+        for k, v in pairs(o) do
+            if type(k) ~= 'number' then
+                k = '"' .. k .. '"'
+            end
+            s = s .. tabs2 .. '[' .. k .. '] = ' .. dump(v, depth + 1) .. ',\n'
+        end
+        return s .. tabs .. '}'
+    else
+        return tostring(o)
+    end
+end
+
+function onBounce(json)
+	print(string.format("called onBounce: %s", dump(json)))
+	if not json["data"] then
+		return
+	end
+	
+	local autoswitch = Tracker:FindObjectForCode("auto_switch")
+	if json["data"]["current_map"] and autoswitch.Active then
+		current_map = current_map or 0
+		local new_map = json["data"]["current_map"]
+		new_map = TAB_MAPPING[new_map]
+		if current_map == new_map then
+			return
+		elseif new_map ~= "" then
+			current_map = new_map
+			print(string.format("Activating %s", current_map))
+			Tracker:UiHint("ActivateTab", current_map)
+		end
+	end
 end
 
 function onClearHandler(slot_data)

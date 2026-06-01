@@ -65,20 +65,20 @@
               }
             },
             {
+              "title": "Tantegel",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "tantegel"
+                ]
+              }
+            },
+            {
               "title": "Brecconary",
               "content": {
                 "type": "map",
                 "maps": [
                   "brecconary"
-                ]
-              }
-            },
-            {
-              "title": "Cantlin",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "cantlin"
                 ]
               }
             },
@@ -92,11 +92,11 @@
               }
             },
             {
-              "title": "Garin's Grave",
+              "title": "Kol",
               "content": {
                 "type": "map",
                 "maps": [
-                  "garins_grave"
+                  "kol"
                 ]
               }
             },
@@ -110,38 +110,11 @@
               }
             },
             {
-              "title": "Hauksness",
+              "title": "Garin's Grave",
               "content": {
                 "type": "map",
                 "maps": [
-                  "hauksness"
-                ]
-              }
-            },
-            {
-              "title": "Kol",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "kol"
-                ]
-              }
-            },
-            {
-              "title": "Mountain Cave",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "mountain_cave"
-                ]
-              }
-            },
-            {
-              "title": "Rimuldar",
-              "content": {
-                "type": "map",
-                "maps": [
-                  "rimuldar"
+                  "garins_grave"
                 ]
               }
             },
@@ -155,11 +128,38 @@
               }
             },
             {
-              "title": "Tantegel",
+              "title": "Rimuldar",
               "content": {
                 "type": "map",
                 "maps": [
-                  "tantegel"
+                  "rimuldar"
+                ]
+              }
+            },
+            {
+              "title": "Mountain Cave",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "mountain_cave"
+                ]
+              }
+            },
+            {
+              "title": "Cantlin",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "cantlin"
+                ]
+              }
+            },
+            {
+              "title": "Hauksness",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "hauksness"
                 ]
               }
             },

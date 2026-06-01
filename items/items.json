@@ -218,6 +218,12 @@
 		"img": "images/items/cursed_belt.png",
 		"codes": "levelsanity_range"
 	},
+	{
+		"name": "Auto-Switch Maps",
+		"type": "toggle",
+		"img": "images/items/autotab.png",
+		"codes": "auto_switch"
+	},
   {
     "name": "Current Weapon",
     "type": "progressive",

@@ -33,12 +33,6 @@ Tracker:AddLayouts("layouts/items.json")
 Tracker:AddLayouts("layouts/tracker.json")
 Tracker:AddLayouts("layouts/broadcast.json")
 
--- Start with "no gear" items lit
-Tracker:FindObjectForCode("equipment_weapon").Active = true
-Tracker:FindObjectForCode("equipment_armor").Active = true
-Tracker:FindObjectForCode("equipment_shield").Active = true
-
-
 -- Autotracking (if supported)
 if PopVersion and PopVersion >= "0.18.0" then
   ScriptHost:LoadScript("scripts/autotracking.lua")

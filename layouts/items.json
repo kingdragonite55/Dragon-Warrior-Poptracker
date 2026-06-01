@@ -28,10 +28,10 @@
     "item_width": 100,
     "item_height": 31,
     "rows": [
-      ["shopsanity"],
-      ["levelsanity"],
-      ["searchsanity"],
-      ["monstersanity"]
+      ["shopsanity", "auto_switch"],
+      ["levelsanity", ""],
+      ["searchsanity", ""],
+      ["monstersanity", ""]
     ]
   },
   "shopsanity_panel": {

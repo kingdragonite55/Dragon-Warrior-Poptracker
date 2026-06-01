@@ -7,17 +7,29 @@
   "author": "KingDragonite & Quinian",
   "variants": {
     "standard": {
-      "display_name": "Map Tracker",
+      "display_name": "Map Tracker | DQ9 Item Sprites",
       "flags": [
         "ap"
       ]
     },
+		"var_hd2dsprites": {
+			"display_name": "Map Tracker | HD-2D Item Sprites",
+			"flags": [
+				"ap"
+			]
+		},
     "var_itemsonly": {
-     "display_name": "Items Only",
+     "display_name": "Items Only | DQ9 Item Sprites",
      "flags": [
        "ap"
      ]
-    }
+    },
+		"var_itemsonly_hd2d": {
+     "display_name": "Items Only | HD-2D Item Sprites",
+     "flags": [
+       "ap"
+     ]
+    },
   },
   "versions_url": "https://raw.githubusercontent.com/Quinian/Dragon-Warrior-Poptracker/main/versions.json"
 }
