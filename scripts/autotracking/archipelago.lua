@@ -34,29 +34,6 @@ local function MarkOne(code)
     end
 end
 
--- Shopsanity panel uses plain item codes (bamboo_pole, chain_mail, etc.).
--- Some packs also have equipment_* aliases; setting both doesn't hurt.
-local function MarkPanelItemAcquired(code)
-    if not code or code == "" then return end
-    MarkOne(code)
-    if not code:match("^equipment_") then
-        MarkOne("equipment_" .. code)
-    end
-end
-
-local function ToItemCodeFromPurchaseLeaf(leaf)
-    -- leaf like: "Purchase Copper Sword"
-    local item = leaf and leaf:match("^Purchase%s+(.+)$") or nil
-    if not item then return nil end
-
-    item = item:lower()
-    item = item:gsub("['’]", "")        -- drop apostrophes
-    item = item:gsub("[^%w]+", "_")     -- spaces/punct -> _
-    item = item:gsub("_+", "_")         -- collapse runs
-    item = item:gsub("^_", ""):gsub("_$", "")
-    return item
-end
-
 local function ClearItem(code, type)
     local item = Tracker:FindObjectForCode(code)
     if not item then return end
@@ -155,37 +132,25 @@ function onItem(index, item_id, item_name, player_number)
 	end
 end
 
+-- Taken from the Pokemon B/W poptracker (thanks palex)
 function onLocationHandler(location_id, location_name)
-    if location_id < 0 then return end
-
-    -- Resolve to tracker location code/path
-    local location_path = LOCATION_MAPPING[tonumber(location_id)]
-
-    -- Some clients hand us a name instead of an id; try to match by leaf name.
-    if not location_path and type(location_id) == "string" then
-        for _, v in pairs(LOCATION_MAPPING) do
-            local clean_name = v:match("([^/]+)$")
-            if clean_name == location_id then
-                location_path = v
-                break
-            end
-        end
+    local value = LOCATION_MAPPING[location_id]
+    if not value then
+        return
     end
-
-    if not location_path then return end
-
-    -- Normal location marking (map dots / chest counts)
-    local obj = Tracker:FindObjectForCode(location_path)
-    if obj then
-		if obj.AvailableChestCount > 1 then
-			obj.AvailableChestCount = obj.AvailableChestCount - 1
-        else
-			obj.AvailableChestCount = 0
-		end
-        local parent = obj.Parent
-        if parent then
-			parent:UpdateVisibility() 
-		end
+    for _, code in pairs(value) do
+        local object = Tracker:FindObjectForCode(code)
+        if object then
+            if code:sub(1, 1) == "@" then
+                object.AvailableChestCount = object.AvailableChestCount - 1
+            elseif object.Type == "progressive" then
+                object.CurrentStage = object.CurrentStage + 1
+            else
+                object.Active = true
+            end
+        elseif AUTOTRACKER_ENABLE_DEBUG_LOGGING_AP then
+            print(string.format("onLocation: could not find object for code %s", code))
+        end
     end
 end
 
@@ -238,8 +203,10 @@ function onBounce(json)
 			return
 		elseif new_map ~= "" then
 			current_map = new_map
-			print(string.format("Activating %s", current_map))
-			Tracker:UiHint("ActivateTab", current_map)
+			for tab in string.gmatch(current_map, "([^/]+)") do
+                print(string.format("Switching to tab %s",tab))
+                Tracker:UiHint("ActivateTab", tab)
+            end
 		end
 	end
 end

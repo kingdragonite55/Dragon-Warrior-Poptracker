@@ -16,27 +16,27 @@
 			"sections": [
 				{
 					"name": "Purchase Bamboo Pole",
-					"ref": "Main/Shopsanity/Purchase Bamboo Pole"
+					"ref": "Main/Shopsanity/Purchase Bamboo Pole Brecconary"
 				},
 				{
 					"name": "Purchase Club",
-					"ref": "Main/Shopsanity/Purchase Club"
+					"ref": "Main/Shopsanity/Purchase Club Brecconary"
 				},
 				{
 					"name": "Purchase Copper Sword",
-					"ref": "Main/Shopsanity/Purchase Copper Sword"  
+					"ref": "Main/Shopsanity/Purchase Copper Sword Brecconary"  
 				},
 				{
 					"name": "Purchase Clothes",
-					"ref": "Main/Shopsanity/Purchase Clothes"
+					"ref": "Main/Shopsanity/Purchase Clothes Brecconary"
 				},
 				{
 					"name": "Purchase Leather Armor",
-					"ref": "Main/Shopsanity/Purchase Leather Armor"
+					"ref": "Main/Shopsanity/Purchase Leather Armor Brecconary"
 				},
 				{
 					"name": "Purchase Small Shield",
-					"ref": "Main/Shopsanity/Purchase Small Shield"
+					"ref": "Main/Shopsanity/Purchase Small Shield Brecconary"
 				}
 			]
 			}

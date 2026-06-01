@@ -265,57 +265,141 @@
 				"chest_opened_img": "/images/npcs/shopkeep-grey.png",
         "sections": [
           {
-            "name": "Purchase Bamboo Pole",
+            "name": "Purchase Bamboo Pole Brecconary",
+          },
+					{
+            "name": "Purchase Bamboo Pole Cantlin",
+						"access_rules": ["@Main/Cantlin"]
           },
           {
-            "name": "Purchase Club",
+            "name": "Purchase Club Brecconary",
+          },
+					{
+            "name": "Purchase Club Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Club Cantlin",
+						"access_rules": ["@Main/Cantlin"]
           },
           {
-            "name": "Purchase Copper Sword",
+            "name": "Purchase Copper Sword Brecconary",
           },
-          {
-            "name": "Purchase Hand Axe",
+					{
+            "name": "Purchase Copper Sword Kol",
 						"access_rules": ["@Main/Kol"]
           },
-          {
-            "name": "Purchase Broad Sword",
+					{
+            "name": "Purchase Copper Sword Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Copper Sword Rimuldar",
 						"access_rules": ["@Main/Rimuldar"]
           },
+					{
+            "name": "Purchase Copper Sword Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
           {
-            "name": "Purchase Flame Sword",
+            "name": "Purchase Hand Axe Kol",
+						"access_rules": ["@Main/Kol"]
+          },
+					{
+            "name": "Purchase Hand Axe Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Hand Axe Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+					{
+            "name": "Purchase Hand Axe Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Broad Sword Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+					{
+            "name": "Purchase Broad Sword Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Flame Sword Cantlin",
 						"access_rules": ["magic_key, @Main/Cantlin"]
           },
           {
-            "name": "Purchase Clothes",
+            "name": "Purchase Clothes Brecconary",
           },
           {
-            "name": "Purchase Leather Armor",
+            "name": "Purchase Leather Armor Brecconary",
           },
-          {
-            "name": "Purchase Chain Mail",
+					{
+            "name": "Purchase Leather Armor Garinham",
 						"access_rules": ["@Main/Garinham"]
           },
-          {
-            "name": "Purchase Half Plate",
-						"access_rules": ["@Main/Kol"]
+					{
+            "name": "Purchase Leather Armor Cantlin",
+						"access_rules": ["@Main/Cantlin"]
           },
           {
-            "name": "Purchase Full Plate",
-						"access_rules": ["@Main/Kol"]
+            "name": "Purchase Chain Mail Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Chain Mail Cantlin",
+						"access_rules": ["@Main/Cantlin"]
           },
           {
-            "name": "Purchase Magic Armor",
+            "name": "Purchase Half Plate Kol",
+						"access_rules": ["@Main/Kol"]
+          },
+					{
+            "name": "Purchase Half Plate Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Half Plate Rimuldar",
 						"access_rules": ["@Main/Rimuldar"]
           },
           {
-            "name": "Purchase Small Shield",
+            "name": "Purchase Full Plate Kol",
+						"access_rules": ["@Main/Kol"]
+          },
+					{
+            "name": "Purchase Full Plate Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+					{
+            "name": "Purchase Full Plate Cantlin",
+						"access_rules": ["@Main/Cantlin"]
           },
           {
-            "name": "Purchase Large Shield",
+            "name": "Purchase Magic Armor Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+					{
+            "name": "Purchase Magic Armor Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Small Shield Brecconary",
+          },
+					{
+            "name": "Purchase Small Shield Kol",
+						"access_rules": ["@Main/Kol"]
+          },
+          {
+            "name": "Purchase Large Shield Garinham",
 						"access_rules": ["@Main/Garinham"]
           },
+					{
+            "name": "Purchase Large Shield Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
           {
-            "name": "Purchase Silver Shield",
+            "name": "Purchase Silver Shield Cantlin",
 						"access_rules": ["magic_key, @Main/Cantlin"]
           }
         ]

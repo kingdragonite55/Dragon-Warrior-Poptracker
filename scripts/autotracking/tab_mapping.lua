@@ -1,17 +1,18 @@
 TAB_MAPPING = {
 	
+	[0x00] = "", -- Title Screen
 	[0x01] = "World Map",
 	[0x02] = "Charlock/Charlock 1F",
 	[0x03] = "Hauksness",
 	[0x04] = "Tantegel",
-	[0x05] = "Tantagel", -- Throne Room
+	[0x05] = "Tantegel", -- Throne Room
 	[0x06] = "Charlock/Charlock B7",
 	[0x07] = "Kol",
 	[0x08] = "Brecconary",
 	[0x09] = "Garinham",
 	[0x0A] = "Cantlin",
 	[0x0B] = "Rimuldar",
-	[0x0C] = "Tantagel", -- Sun Shrine
+	[0x0C] = "Tantegel", -- Sun Shrine
 	[0x0D] = "", -- Rain Shrine
 	[0x0E] = "", -- Magic Temple
 	[0x0F] = "Charlock/Charlock B1",

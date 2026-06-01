@@ -29,23 +29,23 @@
 				"sections": [
 					{
 						"name": "Purchase Copper Sword",
-						"ref": "Main/Shopsanity/Purchase Copper Sword"
+						"ref": "Main/Shopsanity/Purchase Copper Sword Kol"
 					},
 					{
 						"name": "Purchase Hand Axe",
-						"ref": "Main/Shopsanity/Purchase Hand Axe"
+						"ref": "Main/Shopsanity/Purchase Hand Axe Kol"
 					},
 					{
 						"name": "Purchase Half Plate",
-						"ref": "Main/Shopsanity/Purchase Half Plate"
+						"ref": "Main/Shopsanity/Purchase Half Plate Kol"
 					},
 					{
 						"name": "Purchase Full Plate",
-						"ref": "Main/Shopsanity/Purchase Full Plate"
+						"ref": "Main/Shopsanity/Purchase Full Plate Kol"
 					},
 					{
 						"name": "Purchase Small Shield",
-						"ref": "Main/Shopsanity/Purchase Small Shield"
+						"ref": "Main/Shopsanity/Purchase Small Shield Kol"
 					}
 				]
 			}

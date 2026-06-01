@@ -222,6 +222,7 @@
 		"name": "Auto-Switch Maps",
 		"type": "toggle",
 		"img": "images/items/autotab.png",
+		"initial_active_state": true,
 		"codes": "auto_switch"
 	},
   {

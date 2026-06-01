@@ -59,30 +59,31 @@
 				"sections": [
 					{
 						"name": "Purchase Club",
-						"ref": "Main/Shopsanity/Purchase Club"
+						"ref": "Main/Shopsanity/Purchase Club Garinham"
 					},
 					{
 						"name": "Purchase Copper Sword",
-						"ref": "Main/Shopsanity/Purchase Copper Sword"
+						"ref": "Main/Shopsanity/Purchase Copper Sword Garinham"
 					},
 					{
-						"ref": "Main/Shopsanity/Purchase Hand Axe"  
+						"name": "Purchase Hand Axe",
+						"ref": "Main/Shopsanity/Purchase Hand Axe Garinham"  
 					},
 					{
 						"name": "Purchase Leather Armor",
-						"ref": "Main/Shopsanity/Purchase Leather Armor"
+						"ref": "Main/Shopsanity/Purchase Leather Armor Garinham"
 					},
 					{
 						"name": "Purchase Chain Mail",
-						"ref": "Main/Shopsanity/Purchase Chain Mail"
+						"ref": "Main/Shopsanity/Purchase Chain Mail Garinham"
 					},
 					{
 						"name": "Purchase Half Plate",
-						"ref": "Main/Shopsanity/Purchase Half Plate"
+						"ref": "Main/Shopsanity/Purchase Half Plate Garinham"
 					},
 					{
 						"name": "Purchase Large Shield",
-						"ref": "Main/Shopsanity/Purchase Large Shield"
+						"ref": "Main/Shopsanity/Purchase Large Shield Garinham"
 					},
 				]
 			}

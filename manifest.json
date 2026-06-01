@@ -31,5 +31,5 @@
      ]
     },
   },
-  "versions_url": "https://raw.githubusercontent.com/Quinian/Dragon-Warrior-Poptracker/main/versions.json"
+	"min_poptracker_version": "0.25.4"
 }
