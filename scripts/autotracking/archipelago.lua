@@ -8,29 +8,21 @@ local TAB_MAPPING      = require "autotracking.tab_mapping"
 
 CUR_INDEX = -1
 AP_INDEX  = -1
-SAVED_SLOT_DATA = {}
 
--- Equipment dock display logic
-local EQUIPMENT_UPGRADES = {
-    ["Progressive Weapon Upgrade"] = "equipment_weapon",
-    ["Progressive Armor Upgrade"]  = "equipment_armor",
-    ["Progressive Shield Upgrade"] = "equipment_shield"
-}
-
--- Mark a tracker item as acquired in a way that works for toggle/progressive/consumable.
-local function MarkOne(code)
-    local obj = Tracker:FindObjectForCode(code)
-    if not obj then return end
-
-    if obj.Type == "toggle" then
-        obj.Active = true
-    elseif obj.Type == "progressive" then
-        obj.CurrentStage = math.max(obj.CurrentStage or 0, 1)
-        obj.Active = true
-    elseif obj.Type == "consumable" then
-        obj.AcquiredCount = math.max(obj.AcquiredCount or 0, 1)
-    else
-        obj.Active = true
+function ResetLocations()
+	if IS_ITEMS_ONLY then
+		return
+	end
+    for _, v in pairs(LOCATION_MAPPING) do
+        local code = (type(v) == "table") and v[1] or v
+        local obj = Tracker:FindObjectForCode(code)
+        if obj then
+            if code:sub(1, 1) == "@" then
+                obj.AvailableChestCount = obj.ChestCount
+            else
+                obj.Active = false
+            end
+        end
     end
 end
 
@@ -54,24 +46,14 @@ function ClearItems(slot_data)
     for _, v in pairs(ITEM_MAPPING) do
         ClearItem(v[1], v[2])
     end
+end
 
-    -- Clear dock display items directly
-    local dock_codes = { "equipment_weapon", "equipment_armor", "equipment_shield" }
-    for _, code in ipairs(dock_codes) do
-        local obj = Tracker:FindObjectForCode(code)
-        if obj then
-            obj.CurrentStage = 0
-            obj.Active = true
-        end
-    end
+function SetOptions(slot_data)
+	print("%s", dump_table(slot_data))
 
-    -- Auto-toggle option buttons from SlotData.
-    -- option_mapping.lua in this pack is "slotdata_key -> tracker_code OR {tracker_code,...}"
-    local opts = slot_data or SAVED_SLOT_DATA or {}
-	print("%s", dump(slot_data))
-
+	-- Set -sanity toggles 
     for key, mapped in pairs(OPTION_MAPPING) do
-        local isEnabled = (opts[key] == 1) or (opts[key] == 50) or (opts[key] == true)
+        local isEnabled = (slot_data[key] == 1)
 
         if type(mapped) == "table" then
             for _, code in ipairs(mapped) do
@@ -84,14 +66,14 @@ function ClearItems(slot_data)
         end
     end
 	
-	-- Get correct levelsanity check counts. Currently broken for some reason
-	if slot_data["levelsanity_range"] then
-		local levelsanity_range = tonumber(slot_data["levelsanity_range"])
-		levelsanity_low = Tracker:FindObjectForCode("@Main/Levelsanity/Level 2-9")
+	-- Get correct levelsanity check counts
+	if slot_data["levelsanity_range"] and not IS_ITEMS_ONLY then
+		local levelsanity_range = slot_data["levelsanity_range"]
+		local levelsanity_low = Tracker:FindObjectForCode("@Main/Levelsanity/Level 2-9")
 		levelsanity_high = Tracker:FindObjectForCode("@Main/Levelsanity/Level 10+")
-		levelsanity_low.AvailableChestCount = math.min(levelsanity_range, 8)
+		levelsanity_low.AvailableChestCount = math.min(levelsanity_range - 1, 8)
 		levelsanity_high.AvailableChestCount = math.max(0, levelsanity_range - 9)
-		-- levelsanity_high:UpdateVisibility()
+		levelsanity_high = (levelsanity_high.AvailableChestCount ~= 0)
 	end
 end
 
@@ -135,7 +117,7 @@ end
 -- Taken from the Pokemon B/W poptracker (thanks palex)
 function onLocationHandler(location_id, location_name)
     local value = LOCATION_MAPPING[location_id]
-    if not value then
+    if IS_ITEMS_ONLY or not value then
         return
     end
     for _, code in pairs(value) do
@@ -154,43 +136,9 @@ function onLocationHandler(location_id, location_name)
     end
 end
 
-function reset_all_locations()
-    for _, v in pairs(LOCATION_MAPPING) do
-        local code = (type(v) == "table") and v[1] or v
-        local obj = Tracker:FindObjectForCode(code)
-        if obj then
-            if code:sub(1, 1) == "@" then
-                obj.AvailableChestCount = obj.ChestCount
-            else
-                obj.Active = false
-            end
-        end
-    end
-end
-
-function dump(o, depth)
-    if depth == nil then
-        depth = 0
-    end
-    if type(o) == 'table' then
-        local tabs = ('\t'):rep(depth)
-        local tabs2 = ('\t'):rep(depth + 1)
-        local s = '{\n'
-        for k, v in pairs(o) do
-            if type(k) ~= 'number' then
-                k = '"' .. k .. '"'
-            end
-            s = s .. tabs2 .. '[' .. k .. '] = ' .. dump(v, depth + 1) .. ',\n'
-        end
-        return s .. tabs .. '}'
-    else
-        return tostring(o)
-    end
-end
-
 function onBounce(json)
-	print(string.format("called onBounce: %s", dump(json)))
-	if not json["data"] then
+	print(string.format("called onBounce: %s", dump_table(json)))
+	if IS_ITEMS_ONLY or not json["data"] then
 		return
 	end
 	
@@ -202,54 +150,19 @@ function onBounce(json)
 		if current_map == new_map then
 			return
 		elseif new_map ~= "" then
-			current_map = new_map
-			for tab in string.gmatch(current_map, "([^/]+)") do
+			for tab in string.gmatch(new_map, "([^/]+)") do
                 print(string.format("Switching to tab %s",tab))
                 Tracker:UiHint("ActivateTab", tab)
             end
+			current_map = new_map
 		end
 	end
 end
 
 function onClearHandler(slot_data)
-    SAVED_SLOT_DATA = slot_data or {}
-    ClearItems(SAVED_SLOT_DATA)
-    reset_all_locations()
-end
-
-function UpdateReceivedItems()
-    if not Archipelago or not Archipelago.ReceivedItems then return end
-
-    for _, item in pairs(Archipelago.ReceivedItems) do
-        local idx = item.index
-        if idx <= AP_INDEX then goto continue end
-        if item.player ~= Archipelago.PlayerNumber then goto continue end
-        AP_INDEX = idx
-
-        local mapping = ITEM_MAPPING[item.item]
-        if mapping then
-            SetItem(mapping[1], mapping[2])
-        end
-        ::continue::
-    end
-end
-
-function UpdateCheckedLocations()
-    if not Archipelago or not Archipelago.CheckedLocations then return end
-
-    for _, id in pairs(Archipelago.CheckedLocations) do
-        local code = LOCATION_MAPPING[id]
-        if code then
-            local obj = Tracker:FindObjectForCode(code)
-            if obj then obj.AvailableChestCount = 0 end
-        end
-    end
-end
-
-function ResetItems()
-    ClearItems(Archipelago.SlotData or {})
-    UpdateReceivedItems()
-    UpdateCheckedLocations()
+    ResetLocations()
+    ClearItems()
+	SetOptions(slot_data)
 end
 
 Archipelago:AddItemHandler("itemHandler", onItem)

@@ -13,10 +13,6 @@ ScriptHost:LoadScript("scripts/utils.lua")
 ScriptHost:LoadScript("scripts/autotracking/option_mapping.lua")
 ScriptHost:LoadScript("scripts/options.lua")
 
--- Load Logic
-ScriptHost:LoadScript("scripts/logic/logic.lua")
-
-
 -- Load Items
 Tracker:AddItems("items/items.json")
 
@@ -25,8 +21,10 @@ Tracker:AddItems("items/items.json")
 if not IS_ITEMS_ONLY then
   Tracker:AddMaps("maps/maps.json")
 ScriptHost:LoadScript("scripts/locations.lua")
-
 end
+
+-- Load Logic
+ScriptHost:LoadScript("scripts/logic/logic.lua")
 
 -- Layouts
 Tracker:AddLayouts("layouts/items.json")

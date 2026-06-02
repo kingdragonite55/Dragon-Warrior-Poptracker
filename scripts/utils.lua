@@ -19,3 +19,7 @@ function dump_table(o, depth)
         return tostring(o)
     end
 end
+
+function hasHighLevelsanity()
+	return levelsanity_high
+end

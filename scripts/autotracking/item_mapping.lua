@@ -25,11 +25,6 @@ ITEM_MAPPING = {
     [0x9] = {"cursed_belt", "toggle"},
     [0xB] = {"cursed_necklace", "toggle"},
 
-    -- Spam stoppers / filler
-    [0xD1] = {"gold", "consumable"},
-    [0xD2] = {"gold_high", "consumable"},
-    [0xF] = {"medicinal_herb", "consumable"},
-
 }
 
 return ITEM_MAPPING

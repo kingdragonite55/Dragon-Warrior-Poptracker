@@ -211,14 +211,6 @@
     "allow_disabled": true
   },
 	{
-		"name": "Levelsanity Range",
-		"type": "consumable",
-		"max_quantity": 30,
-		"initial_quantity": 20,
-		"img": "images/items/cursed_belt.png",
-		"codes": "levelsanity_range"
-	},
-	{
 		"name": "Auto-Switch Maps",
 		"type": "toggle",
 		"img": "images/items/autotab.png",

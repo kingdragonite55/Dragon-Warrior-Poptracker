@@ -419,6 +419,7 @@
             "name": "Level 10+",
 						"item_count": 21,
 						"clear_as_group": false,
+						"visibility_rules": ["$hasHighLevelsanity"],
 						"access_rules": [
 							"magic_key, $equipment_helper|3|3|2"
 						]

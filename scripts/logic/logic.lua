@@ -51,19 +51,6 @@ function can_defeat_dragonlord()
 	end
 end
 
--- Progressive Gear 
-function WeaponLevel()
-    return Tracker:ProviderCountForCode("weapon") or 0
-end
-
-function ArmorLevel()
-    return Tracker:ProviderCountForCode("armor") or 0
-end
-
-function ShieldLevel()
-    return Tracker:ProviderCountForCode("shield") or 0
-end
-
 function equipment_helper(weapon_count, armor_count, shield_count)
 	if not has("shopsanity") then
 		return true
