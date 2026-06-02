@@ -1,0 +1,375 @@
+[
+  {
+    "name": "Ball of Light",
+    "type": "toggle",
+    "img": "images/items/ball_of_light.png",
+    "codes": "ball_of_light"
+  },
+  {
+    "name": "Silver harp",
+    "type": "toggle",
+    "img": "images/items/silver_harp.png",
+    "codes": "silver_harp"
+  },
+  {
+    "name": "Staff of Rain",
+    "type": "toggle",
+    "img": "images/items/staff_of_rain.png",
+    "codes": "staff_of_rain"
+  },
+  {
+    "name": "Erdrick's Token",
+    "type": "toggle",
+		"img": "images/items/erdricks_token.png",
+    "codes": "erdricks_token"
+  },
+  {
+    "name": "Stones of Sunlight",
+    "type": "toggle",
+	"img": "images/items/stones_of_sunlight.png",
+    "codes": "stones_of_sunlight"
+  },
+  {
+    "name": "Gold",
+    "type": "consumable",
+    "img": "images/items/gold.png",
+    "codes": "gold",
+    "visibility_rule": "never"
+  },
+  {
+    "name": "Medicinal Herb",
+    "type": "consumable",
+    "img": "images/items/herb.png",
+    "codes": "medicinal_herb",
+    "visibility_rule": "never"
+  },
+  {
+    "name": "High Gold",
+    "type": "consumable",
+    "img": "images/items/gold.png",
+    "codes": "gold_high",
+    "visibility_rule": "never"
+  },
+  {
+    "name": "Rainbow Drop",
+    "type": "toggle",
+    "img": "images/items/rainbow_drop.png",
+    "codes": "rainbow_drop"
+  },
+  {
+    "name": "Gwaelin's Love",
+    "type": "toggle",
+    "img": "images/items/gwaelins_love.png",
+    "codes": "gwaelins_love"
+  },
+  {
+    "name": "Fairy Flute",
+    "type": "toggle",
+    "img": "images/items/fairy_flute.png",
+    "codes": "fairy_flute"
+  },
+  {
+    "name": "Erdrick's Tablet",
+    "type": "toggle",
+    "img": "images/items/erdricks_tablet.png",
+    "codes": "erdricks_tablet"
+  },
+  {
+    "name": "Magic Key",
+    "type": "toggle",
+    "img": "images/items/magic_key.png",
+    "codes": "magic_key"
+  },
+  {
+    "name": "Bamboo Pole",
+    "type": "toggle",
+    "img": "images/items/weapon_bamboo_pole.png",
+    "codes": "bamboo_pole"
+  },
+  {
+    "name": "Club",
+    "type": "toggle",
+    "img": "images/items/weapon_club.png",
+    "codes": "club"
+  },
+  {
+    "name": "Copper Sword",
+    "type": "toggle",
+    "img": "images/items/weapon_copper_sword.png",
+    "codes": "copper_sword"
+  },
+  {
+    "name": "Hand Axe",
+    "type": "toggle",
+    "img": "images/items/weapon_handaxe.png",
+    "codes": "hand_axe"
+  },
+  {
+    "name": "Broad Sword",
+    "type": "toggle",
+    "img": "images/items/weapon_broad_sword.png",
+    "codes": "broad_sword"
+  },
+  {
+    "name": "Flame Sword",
+    "type": "toggle",
+    "img": "images/items/weapon_flame_sword.png",
+    "codes": "flame_sword"
+  },
+  {
+    "name": "Erdrick's Sword",
+    "type": "toggle",
+    "img": "images/items/weapon_erdricks_sword.png",
+    "codes": "erdricks_sword"
+  },
+  {
+    "name": "Clothes",
+    "type": "toggle",
+    "img": "images/items/armor_clothes.png",
+    "codes": "clothes"
+  },
+  {
+    "name": "Leather Armor",
+    "type": "toggle",
+    "img": "images/items/armor_leather.png",
+    "codes": "leather_armor"
+  },
+  {
+    "name": "Chain Mail",
+    "type": "toggle",
+    "img": "images/items/armor_chainmail.png",
+    "codes": "chain_mail"
+  },
+  {
+    "name": "Half Plate",
+    "type": "toggle",
+    "img": "images/items/armor_halfplate.png",
+    "codes": "half_plate"
+  },
+  {
+    "name": "Full Plate",
+    "type": "toggle",
+    "img": "images/items/armor_fullplate.png",
+    "codes": "full_plate"
+  },
+  {
+    "name": "Magic Armor",
+    "type": "toggle",
+    "img": "images/items/armor_magic.png",
+    "codes": "magic_armor"
+  },
+  {
+    "name": "Erdrick's Armor",
+    "type": "toggle",
+    "img": "images/items/armor_erdricks.png",
+    "codes": "erdricks_armor"
+  },
+  {
+    "name": "Small Shield",
+    "type": "toggle",
+    "img": "images/items/shield_small.png",
+    "codes": "small_shield"
+  },
+  {
+    "name": "Large Shield",
+    "type": "toggle",
+    "img": "images/items/shield_large.png",
+    "codes": "large_shield"
+  },
+  {
+    "name": "Silver Shield",
+    "type": "toggle",
+    "img": "images/items/shield_silver.png",
+    "codes": "silver_shield"
+  },
+  {
+    "name": "Shopsanity",
+    "type": "toggle",
+    "img": "images/items/shopsanity.png",
+    "codes": "shopsanity",
+    "allow_disabled": true
+  },
+  {
+    "name": "Levelsanity",
+    "type": "toggle",
+    "img": "images/items/levelsanity.png",
+    "codes": "levelsanity",
+    "allow_disabled": true
+  },
+  {
+    "name": "Searchsanity",
+    "type": "toggle",
+    "img": "images/items/searchsanity.png",
+    "codes": "searchsanity",
+    "allow_disabled": true
+  },
+  {
+    "name": "Monstersanity",
+    "type": "toggle",
+    "img": "images/items/monstersanity.png",
+    "codes": "monstersanity",
+    "allow_disabled": true
+  },
+	{
+		"name": "Auto-Switch Maps",
+		"type": "toggle",
+		"img": "images/items/autotab.png",
+		"initial_active_state": true,
+		"codes": "auto_switch"
+	},
+  {
+    "name": "Current Weapon",
+    "type": "progressive",
+    "codes": "equipment_weapon",
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+            {
+        "name": "No Weapon",
+        "img": "images/items/weapon_none.png",
+        "codes": "equipment_weapon"
+      },
+      {
+        "name": "Bamboo Pole",
+        "img": "images/items/weapon_bamboo_pole.png",
+        "codes": "equipment_bamboo_pole"
+      },
+      {
+        "name": "Club",
+        "img": "images/items/weapon_club.png",
+        "codes": "equipment_club"
+      },
+      {
+        "name": "Copper Sword",
+        "img": "images/items/weapon_copper_sword.png",
+        "codes": "equipment_copper_sword"
+      },
+      {
+        "name": "Hand Axe",
+        "img": "images/items/weapon_handaxe.png",
+        "codes": "equipment_hand_axe"
+      },
+      {
+        "name": "Broad Sword",
+        "img": "images/items/weapon_broad_sword.png",
+        "codes": "equipment_broad_sword"
+      },
+      {
+        "name": "Flame Sword",
+        "img": "images/items/weapon_flame_sword.png",
+        "codes": "equipment_flame_sword"
+      },
+      {
+        "name": "Erdrick's Sword",
+        "img": "images/items/weapon_erdricks_sword.png",
+        "codes": "equipment_erdricks_sword"
+      }
+    ]
+  },
+  {
+    "name": "Current Armor",
+    "type": "progressive",
+    "codes": [
+      "equipment_armor"
+    ],
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+            {
+        "name": "No Armor",
+        "img": "images/items/armor_none.png",
+         "codes": "equipment_armor"
+      },
+      {
+        "name": "Clothes",
+        "img": "images/items/armor_clothes.png",
+        "codes": "equipment_clothes"
+      },
+      {
+        "name": "Leather Armor",
+        "img": "images/items/armor_leather.png",
+        "codes": "equipment_leather_armor"
+      },
+      {
+        "name": "Chain Mail",
+        "img": "images/items/armor_chainmail.png",
+        "codes": "equipment_chainmail"
+      },
+      {
+        "name": "Half Plate",
+        "img": "images/items/armor_halfplate.png",
+        "codes": "equipment_half_plate"
+      },
+      {
+        "name": "Full Plate",
+        "img": "images/items/armor_fullplate.png",
+        "codes": "equipment_full_plate"
+      },
+      {
+        "name": "Magic Armor",
+        "img": "images/items/armor_magic.png",
+        "codes": "equipment_magic_armor"
+      },
+      {
+        "name": "Erdrick's Armor",
+        "img": "images/items/armor_erdricks.png",
+        "codes": "equipment_erdricks_armor"
+      }
+    ]
+  },
+  {
+    "name": "Current Shield",
+    "type": "progressive",
+    "codes": [
+      "equipment_shield"
+    ],
+    "loop": true,
+    "allow_disabled": false,
+    "stages": [
+      {
+        "name": "No Shield",
+        "img": "images/items/shield_none.png",
+         "codes": "equipment_shield"
+      },
+      {
+        "name": "Small Shield",
+        "img": "images/items/shield_small.png",
+        "codes": "equipment_small_shield"
+      },
+      {
+        "name": "Large Shield",
+        "img": "images/items/shield_large.png",
+        "codes": "equipment_large_shield"
+      },
+      {
+        "name": "Silver Shield",
+        "img": "images/items/shield_silver.png",
+        "codes": "equipment_silver_shield"
+      }
+    ]
+  },
+	{
+		"name": "Dragon Scale",
+		"type": "toggle",
+		"img": "images/items/dragon_scale.png",
+		"codes": "dragon_scale"
+	},
+	{
+		"name": "Fighter's Ring",
+		"type": "toggle",
+		"img": "images/items/fighters_ring.png",
+		"codes": "fighters_ring"
+	},
+	{
+		"name": "Cursed Necklace",
+		"type": "toggle",
+		"img": "images/items/cursed_necklace.png",
+		"codes": "cursed_necklace"
+	},
+	{
+		"name": "Cursed Belt",
+		"type": "toggle",
+		"img": "images/items/cursed_belt.png",
+		"codes": "cursed_belt"
+	}
+]

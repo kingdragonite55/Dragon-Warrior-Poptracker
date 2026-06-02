@@ -1,0 +1,142 @@
+[
+  {
+    "name": "Tantagel Map",
+    "children": [
+      {
+        "name": "Throne Room - Gold Chest",
+        "map_locations": [
+          {
+            "map": "tantegel",
+            "x": 234,
+            "y": 1190
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Tantagel Castle/Throne Room - Gold Chest"
+          }
+        ]
+      },
+      {
+        "name": "Throne Room - Key Chest",
+        "map_locations": [
+          {
+            "map": "tantegel",
+            "x": 288,
+            "y": 1107
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Tantagel Castle/Throne Room - Key Chest"
+          }
+        ]
+      },
+      {
+        "name": "Throne Room - Torch Chest",
+        "map_locations": [
+          {
+            "map": "tantegel",
+            "x": 262,
+            "y": 1190
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Tantagel Castle/Throne Room - Torch Chest"
+          }
+        ]
+      },
+      {
+        "name": "Tantegel Castle - Gold Chest 1",
+        "map_locations": [
+          {
+            "map": "tantegel",
+            "x": 135,
+            "y": 447
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Tantagel Castle/Tantegel Castle - Gold Chest 1"
+          }
+        ]
+      },
+      {
+        "name": "Tantegel Castle - Gold Chest 2",
+        "map_locations": [
+          {
+            "map": "tantegel",
+            "x": 135,
+            "y": 500
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Tantagel Castle/Tantegel Castle - Gold Chest 2"
+          }
+        ]
+      },
+      {
+        "name": "Tantegel Castle - Gold Chest 3",
+        "map_locations": [
+          {
+            "map": "tantegel",
+            "x": 161,
+            "y": 475
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Tantagel Castle/Tantegel Castle - Gold Chest 3"
+          }
+        ]
+      },
+      {
+        "name": "Tantegel Castle - Gold Chest 4",
+        "map_locations": [
+          {
+            "map": "tantegel",
+            "x": 190,
+            "y": 500
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Tantagel Castle/Tantegel Castle - Gold Chest 4"
+          }
+        ]
+      },
+      {
+        "name": "Stones of Sunlight",
+        "map_locations": [
+          {
+            "map": "tantegel",
+            "x": 720,
+            "y": 1226
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Tantagel Castle/Stones of Sunlight"
+          }
+        ]
+      },
+      {
+        "name": "Gwaelin's Love",
+        "map_locations": [
+          {
+            "map": "tantegel",
+            "x": 286,
+            "y": 1155
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Tantagel Castle/Return Gwaelin to Castle"
+          }
+        ]
+      }
+    ]
+  }
+]

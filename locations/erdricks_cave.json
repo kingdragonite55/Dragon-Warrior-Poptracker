@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Erdrick's Cave Map",
+    "children": [
+      {
+        "name": "Erdrick's Tablet",
+        "map_locations": [
+          {
+            "map": "erdricks_cave",
+            "x": 888,
+            "y": 218
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Erdrick's Cave/Erdrick's Tablet"
+          }
+        ]
+      }
+    ]
+  }
+]

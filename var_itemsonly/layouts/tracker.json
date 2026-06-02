@@ -1,0 +1,45 @@
+﻿{
+  "tracker_default": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "size": 240,
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "min_size": [
+                340,
+                200
+              ],
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Equipment",
+              "dock": "left",
+              "min_size": [
+                100,
+                36
+              ],
+              "content": {
+                "type": "layout",
+                "key": "equipment_panel"
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

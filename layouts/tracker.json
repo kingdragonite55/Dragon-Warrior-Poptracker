@@ -1,0 +1,215 @@
+﻿{
+  "tracker_default": {
+    "type": "container",
+    "background": "#000000",
+    "content": {
+      "type": "dock",
+      "dropshadow": true,
+      "content": [
+        {
+          "type": "dock",
+          "dock": "bottom",
+          "size": 240,
+          "content": [
+            {
+              "type": "group",
+              "header": "Items",
+              "dock": "left",
+              "min_size": [
+                340,
+                200
+              ],
+              "content": {
+                "type": "layout",
+                "key": "shared_item_grid"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Equipment",
+              "dock": "left",
+              "min_size": [
+                100,
+                36
+              ],
+              "content": {
+                "type": "layout",
+                "key": "equipment_panel"
+              }
+            },
+            {
+              "type": "group",
+              "header": "Options",
+              "dock": "left",
+              "min_size": [
+                180,
+                200
+              ],
+              "content": {
+                "type": "layout",
+                "key": "option_toggles"
+              }
+            },
+          ]
+        },
+        {
+          "type": "tabbed",
+          "tabs": [
+            {
+              "title": "World Map",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "world_map"
+                ]
+              }
+            },
+            {
+              "title": "Tantegel",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "tantegel"
+                ]
+              }
+            },
+            {
+              "title": "Brecconary",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "brecconary"
+                ]
+              }
+            },
+            {
+              "title": "Erdrick's Cave",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "erdricks_cave"
+                ]
+              }
+            },
+            {
+              "title": "Kol",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "kol"
+                ]
+              }
+            },
+            {
+              "title": "Garinham",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "garinham"
+                ]
+              }
+            },
+            {
+              "title": "Garin's Grave",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "garins_grave"
+                ]
+              }
+            },
+            {
+              "title": "Swamp Cave",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "swamp_cave"
+                ]
+              }
+            },
+            {
+              "title": "Rimuldar",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "rimuldar"
+                ]
+              }
+            },
+            {
+              "title": "Mountain Cave",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "mountain_cave"
+                ]
+              }
+            },
+            {
+              "title": "Cantlin",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "cantlin"
+                ]
+              }
+            },
+            {
+              "title": "Hauksness",
+              "content": {
+                "type": "map",
+                "maps": [
+                  "hauksness"
+                ]
+              }
+            },
+            {
+              "title": "Charlock",
+              "content": {
+                "type": "tabbed",
+                "tabs": [
+                  {
+                    "title": "Charlock 1F",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "charlock_1f"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Charlock B1",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "charlock_b1"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Charlock Basement Connections",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "charlock_basement_connections"
+                      ]
+                    }
+                  },
+                  {
+                    "title": "Charlock B7",
+                    "content": {
+                      "type": "map",
+                      "maps": [
+                        "charlock_b7"
+                      ]
+                    }
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}

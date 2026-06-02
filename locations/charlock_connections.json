@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Charlock B2-6 Map",
+    "children": [
+      {
+        "name": "Erdrick's Sword",
+        "map_locations": [
+          {
+            "map": "charlock_basement_connections",
+            "x": 179,
+            "y": 202
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Charlock Castle/Erdrick's Sword"
+          }
+        ]
+      }
+    ]
+  }
+]

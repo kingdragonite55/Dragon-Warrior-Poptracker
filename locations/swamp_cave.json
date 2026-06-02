@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Swamp Cave Map",
+    "children": [
+      {
+        "name": "Save the Princess",
+        "map_locations": [
+          {
+            "map": "swamp_cave",
+            "x": 209,
+            "y": 577
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Swamp Cave/Rescue Princess Gwaelin"
+          }
+        ]
+      },
+			{
+				"name": "Defeat Green Dragon",
+				"map_locations": [
+					{
+						"map": "swamp_cave",
+						"x": 181,
+						"y": 485
+					}
+				],
+				"sections": [
+					{
+						"ref": "Main/Monstersanity/Defeat Green Dragon"
+					}
+				]
+			}
+    ]
+  }
+]

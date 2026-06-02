@@ -1,0 +1,136 @@
+[
+  {
+    "name": "Charlock B7 Map",
+    "children": [
+      {
+        "name": "Dragonlord's Lair - Chest 1",
+        "map_locations": [
+          {
+            "map": "charlock_b7",
+            "x": 392,
+            "y": 394
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 1"
+          }
+        ]
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 2",
+        "map_locations": [
+          {
+            "map": "charlock_b7",
+            "x": 392,
+            "y": 425
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 2"
+          }
+        ]
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 3",
+        "map_locations": [
+          {
+            "map": "charlock_b7",
+            "x": 392,
+            "y": 457
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 3"
+          }
+        ]
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 4",
+        "map_locations": [
+          {
+            "map": "charlock_b7",
+            "x": 425,
+            "y": 425
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 4"
+          }
+        ]
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 5",
+        "map_locations": [
+          {
+            "map": "charlock_b7",
+            "x": 424,
+            "y": 457
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 5"
+          }
+        ]
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 6",
+        "map_locations": [
+          {
+            "map": "charlock_b7",
+            "x": 455,
+            "y": 457
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 6"
+          }
+        ]
+      },
+			{
+				"name": "Defeat Golem",
+				"map_locations": [
+					{
+						"map": "charlock_b7",
+						"x": 830,
+						"y": 731
+					}
+				],
+				"sections": [
+					{
+						"ref": "Main/Monstersanity/Defeat Golem"
+					}
+				]
+			},
+      {
+        "name": "Dragonlord",
+        "map_locations": [
+          {
+            "map": "charlock_b7",
+            "x": 546,
+            "y": 794
+          }
+        ],
+        "sections": [
+					{
+						"name": "Defeat Dragonlord 1",
+						"ref": "Main/Monstersanity/Defeat Dragonlord 1"
+					},
+					{
+						"name": "Defeat Dragonlord 2",
+						"ref": "Main/Monstersanity/Defeat Dragonlord 2"
+					},
+          {
+						"name": "Defeated Dragonlord",
+            "ref": "Main/Charlock Castle/Defeated Dragonlord"
+          }
+        ]
+      }
+    ]
+  }
+]

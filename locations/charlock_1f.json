@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Charlock 1F",
+    "children": [
+			{
+				"name": "Charlock Monsters",
+				"map_locations": [
+					{
+						"map": "charlock_1f",
+						"x": 201,
+						"y": 232,
+						"size": 10,
+						"border_thickness": 2
+					}
+				],
+				"sections": [
+					{
+						"name": "Defeat Blue Dragon",
+						"ref": "Main/Monstersanity/Defeat Blue Dragon"
+					},
+					{
+						"name": "Defeat Stoneman",
+						"ref": "Main/Monstersanity/Defeat Stoneman"
+					},
+					{
+						"name": "Defeat Armored Knight",
+						"ref": "Main/Monstersanity/Defeat Armored Knight"
+					},
+					{
+						"name": "Defeat Red Dragon",
+						"ref": "Main/Monstersanity/Defeat Red Dragon"
+					}
+				]
+			}
+    ]
+  }
+]

@@ -1,0 +1,92 @@
+[
+  {
+    "name": "garinham",
+    "children": [
+      {
+        "name": "Chest 1",
+        "map_locations": [
+          {
+            "map": "garinham",
+            "x": 323,
+            "y": 215
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Garinham/Garinham - Chest 1"
+          }
+        ]
+      },
+      {
+        "name": "Chest 2",
+        "map_locations": [
+          {
+            "map": "garinham",
+            "x": 323,
+            "y": 255
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Garinham/Garinham - Chest 2"
+          }
+        ]
+      },
+      {
+        "name": "Chest 3",
+        "map_locations": [
+          {
+            "map": "garinham",
+            "x": 360,
+            "y": 215
+          }
+        ],
+        "sections": [
+          {
+            "ref": "Main/Garinham/Garinham - Chest 3"
+          }
+        ]
+      },
+			{
+				"name": "Shopkeeper",
+				"map_locations": [
+					{
+						"map": "garinham",
+						"x": 390,
+						"y": 689
+					}
+				],
+				"sections": [
+					{
+						"name": "Purchase Club",
+						"ref": "Main/Shopsanity/Purchase Club Garinham"
+					},
+					{
+						"name": "Purchase Copper Sword",
+						"ref": "Main/Shopsanity/Purchase Copper Sword Garinham"
+					},
+					{
+						"name": "Purchase Hand Axe",
+						"ref": "Main/Shopsanity/Purchase Hand Axe Garinham"  
+					},
+					{
+						"name": "Purchase Leather Armor",
+						"ref": "Main/Shopsanity/Purchase Leather Armor Garinham"
+					},
+					{
+						"name": "Purchase Chain Mail",
+						"ref": "Main/Shopsanity/Purchase Chain Mail Garinham"
+					},
+					{
+						"name": "Purchase Half Plate",
+						"ref": "Main/Shopsanity/Purchase Half Plate Garinham"
+					},
+					{
+						"name": "Purchase Large Shield",
+						"ref": "Main/Shopsanity/Purchase Large Shield Garinham"
+					},
+				]
+			}
+    ]
+  }
+]

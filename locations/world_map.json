@@ -1,0 +1,719 @@
+[
+  {
+    "name": "Staff of Rain",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 670,
+        "y": 42
+      }
+    ],
+    "sections": [
+      {
+        "name": "Harp Turn In",
+        "ref": "Main/world_map/Staff of Rain"
+      }
+    ]
+  },
+  {
+    "name": "Erdrick's Token",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 687,
+        "y": 921
+      }
+    ],
+    "sections": [
+      {
+        "name": "Erdrick's Token",
+        "ref": "Main/world_map/Erdrick's Token"
+      }
+    ]
+  },
+  {
+    "name": "Rainbow Shrine",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 880,
+        "y": 890
+      }
+    ],
+    "sections": [
+      {
+        "name": "Rainbow Shrine",
+        "ref": "Main/world_map/Rainbow Shrine"
+      }
+    ]
+  },
+
+  {
+    "name": "Tantagel Castle",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 373,
+        "y": 373
+      }
+    ],
+    "sections": [
+      {
+        "name": "Throne Room - Gold Chest",
+        "ref": "Main/Tantagel Castle/Throne Room - Gold Chest"
+      },
+      {
+        "name": "Throne Room - Key Chest",
+        "ref": "Main/Tantagel Castle/Throne Room - Key Chest"
+      },
+      {
+        "name": "Throne Room - Torch Chest",
+        "ref": "Main/Tantagel Castle/Throne Room - Torch Chest"
+      },
+      {
+        "name": "Tantegel Castle - Gold Chest 1",
+        "ref": "Main/Tantagel Castle/Tantegel Castle - Gold Chest 1"
+      },
+      {
+        "name": "Tantegel Castle - Gold Chest 2",
+        "ref": "Main/Tantagel Castle/Tantegel Castle - Gold Chest 2"
+      },
+      {
+        "name": "Tantegel Castle - Gold Chest 3",
+        "ref": "Main/Tantagel Castle/Tantegel Castle - Gold Chest 3"
+      },
+      {
+        "name": "Tantegel Castle - Gold Chest 4",
+        "ref": "Main/Tantagel Castle/Tantegel Castle - Gold Chest 4"
+      },
+      {
+        "name": "Stones of Sunlight",
+        "ref": "Main/Tantagel Castle/Stones of Sunlight"
+      },
+      {
+        "name": "Gwaelin's Love",
+        "ref": "Main/Tantagel Castle/Return Gwaelin to Castle"
+      }
+    ]
+  },
+	{
+	"name": "Brecconary",
+	"map_locations": [
+	  {
+		"map": "world_map",
+		"x": 412,
+		"y": 355
+	  }
+	],
+	"sections": [
+	  {
+			"name": "Purchase Bamboo Pole",
+      "ref": "Main/Shopsanity/Purchase Bamboo Pole Brecconary"
+	  },
+    {
+      "name": "Purchase Club",
+      "ref": "Main/Shopsanity/Purchase Club Brecconary"
+    },
+    {
+      "name": "Purchase Copper Sword",
+      "ref": "Main/Shopsanity/Purchase Copper Sword Brecconary"
+	  },
+	  {
+      "name": "Purchase Clothes",
+      "ref": "Main/Shopsanity/Purchase Clothes Brecconary"
+    },
+	  {
+      "name": "Purchase Leather Armor",
+      "ref": "Main/Shopsanity/Purchase Leather Armor Brecconary"
+    },
+	  {
+      "name": "Purchase Small Shield",
+      "ref": "Main/Shopsanity/Purchase Small Shield Brecconary"
+    }
+	]
+	},
+	{
+		"name": "Brecconary Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 300,
+				"y": 355
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Slime",
+				"ref": "Main/Monstersanity/Defeat Slime"
+			},
+			{
+				"name": "Defeat Red Slime",
+				"ref": "Main/Monstersanity/Defeat Red Slime"
+			},
+			{
+				"name": "Defeat Drakee",
+				"ref": "Main/Monstersanity/Defeat Drakee"
+			}
+		]
+	},
+  {
+    "name": "Swamp Cave",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 850,
+        "y": 400
+      }
+    ],
+    "sections": [
+			{
+				"name": "Defeat Green Dragon",
+				"ref": "Main/Monstersanity/Defeat Green Dragon"
+			},
+      {
+        "name": "Save the Princess",
+        "ref": "Main/Swamp Cave/Rescue Princess Gwaelin"
+      }
+    ]
+  },
+  {
+    "name": "Garinham",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 50,
+        "y": 50
+      }
+    ],
+    "sections": [
+			{
+        "name": "Purchase Club",
+        "ref": "Main/Shopsanity/Purchase Club Garinham"
+      },
+			{
+        "name": "Purchase Copper Sword",
+        "ref": "Main/Shopsanity/Purchase Copper Sword Garinham"
+      },
+			{
+        "name": "Purchase Hand Axe",
+        "ref": "Main/Shopsanity/Purchase Hand Axe Garinham"
+      },
+			{
+        "name": "Purchase Leather Armor",
+        "ref": "Main/Shopsanity/Purchase Leather Armor Garinham"
+      },
+			{
+        "name": "Purchase Chain Mail",
+        "ref": "Main/Shopsanity/Purchase Chain Mail Garinham"
+      },
+			{
+        "name": "Purchase Half Plate",
+        "ref": "Main/Shopsanity/Purchase Half Plate Garinham"
+      },
+			{
+        "name": "Purchase Large Shield",
+        "ref": "Main/Shopsanity/Purchase Large Shield Garinham"
+      },
+      {
+        "name": "Chest 1",
+        "ref": "Main/Garinham/Garinham - Chest 1"
+      },
+      {
+        "name": "Chest 2",
+        "ref": "Main/Garinham/Garinham - Chest 2"
+      },
+      {
+        "name": "Chest 3",
+        "ref": "Main/Garinham/Garinham - Chest 3"
+      }
+    ]
+  },
+  {
+    "name": "Garin's Grave",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 50,
+        "y": 70
+      }
+    ],
+    "sections": [
+      {
+        "name": "Level 1 - Chest 1",
+        "ref": "Main/Garin's Grave/Garin's Grave - Level 1 - Chest 1"
+      },
+      {
+        "name": "Level 1 - Chest 2",
+        "ref": "Main/Garin's Grave/Garin's Grave - Level 1 - Chest 2"
+      },
+      {
+        "name": "Level 1 - Chest 3",
+        "ref": "Main/Garin's Grave/Garin's Grave - Level 1 - Chest 3"
+      },
+      {
+        "name": "Level 3 - Chest 1",
+        "ref": "Main/Garin's Grave/Garin's Grave - Level 3 - Chest 1"
+      },
+      {
+        "name": "Level 3 - Chest 2",
+        "ref": "Main/Garin's Grave/Garin's Grave - Level 3 - Chest 2"
+      },
+			{
+				"name": "Defeat Specter",
+				"ref": "Main/Monstersanity/Defeat Specter"
+			},
+			{
+				"name": "Defeat Druinlord",
+				"ref": "Main/Monstersanity/Defeat Druinlord"
+			},
+			{
+				"name": "Defeat Drollmagi",
+				"ref": "Main/Monstersanity/Defeat Drollmagi"
+			}
+    ]
+  },
+	{
+		"name": "Garinham Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 135,
+				"y": 170
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Ghost",
+				"ref": "Main/Monstersanity/Defeat Ghost"
+			},
+			{
+				"name": "Defeat Magician",
+				"ref": "Main/Monstersanity/Defeat Magician"
+			}
+		]
+	},
+  {
+    "name": "Erdrick's Cave",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 255,
+        "y": 130
+      }
+    ],
+    "sections": [
+      {
+        "name": "Erdrick's Tablet",
+        "ref": "Main/Erdrick's Cave/Erdrick's Tablet"
+      }
+    ]
+  },
+  {
+    "name": "Kol",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 850,
+        "y": 110
+      }
+    ],
+    "sections": [
+			{
+        "name": "Purchase Copper Sword",
+        "ref": "Main/Shopsanity/Purchase Copper Sword Kol"
+      },
+			{
+        "name": "Purchase Hand Axe",
+        "ref": "Main/Shopsanity/Purchase Hand Axe Kol"
+      },
+			{
+        "name": "Purchase Half Plate",
+        "ref": "Main/Shopsanity/Purchase Half Plate Kol"
+      },
+			{
+        "name": "Purchase Full Plate",
+        "ref": "Main/Shopsanity/Purchase Full Plate Kol"
+      },
+			{
+        "name": "Purchase Small Shield",
+        "ref": "Main/Shopsanity/Purchase Small Shield Kol"
+      },
+      {
+        "name": "Fairy Flute",
+        "ref": "Main/Kol/Fairy Flute"
+      }
+    ]
+  },
+	{
+		"name": "Kol Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 800,
+				"y": 150
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Magidrakee",
+				"ref": "Main/Monstersanity/Defeat Magidrakee"
+			},
+			{
+				"name": "Defeat Scorpion",
+				"ref": "Main/Monstersanity/Defeat Scorpion"
+			}
+		]
+	},
+  {
+    "name": "Charlock Castle",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 412,
+        "y": 412
+      }
+    ],
+    "sections": [
+      {
+        "name": "Erdrick's Sword",
+        "ref": "Main/Charlock Castle/Erdrick's Sword"
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 1",
+        "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 1"
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 2",
+        "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 2"
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 3",
+        "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 3"
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 4",
+        "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 4"
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 5",
+        "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 5"
+      },
+      {
+        "name": "Dragonlord's Lair - Chest 6",
+        "ref": "Main/Charlock Castle/Dragonlord's Lair - Chest 6"
+      },
+			{
+				"name": "Defeat Blue Dragon",
+				"ref": "Main/Monstersanity/Defeat Blue Dragon"
+			},
+			{
+				"name": "Defeat Stoneman",
+				"ref": "Main/Monstersanity/Defeat Stoneman"
+			},
+			{
+				"name": "Defeat Armored Knight",
+				"ref": "Main/Monstersanity/Defeat Armored Knight"
+			},
+			{
+				"name": "Defeat Red Dragon",
+				"ref": "Main/Monstersanity/Defeat Red Dragon"
+			},
+			{
+				"name": "Defeat Golem",
+				"ref": "Main/Monstersanity/Defeat Golem"
+			},
+			{
+				"name": "Defeat Dragonlord 1",
+				"ref": "Main/Monstersanity/Defeat Dragonlord 1"
+			},
+			{
+				"name": "Defeat Dragonlord 2",
+				"ref": "Main/Monstersanity/Defeat Dragonlord 2"
+			},
+      {
+        "name": "Defeated Dragonlord",
+        "ref": "Main/Charlock Castle/Defeated Dragonlord"
+      }
+    ]
+  },
+  {
+    "name": "Rimuldar",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 835,
+        "y": 600
+      }
+    ],
+    "sections": [
+			{
+				"name": "Purchase Copper Sword",
+				"ref": "Main/Shopsanity/Purchase Copper Sword Rimuldar"
+			},
+			{
+				"name": "Purchase Hand Axe",
+				"ref": "Main/Shopsanity/Purchase Hand Axe Rimuldar"
+			},
+			{
+				"name": "Purchase Broad Sword",
+				"ref": "Main/Shopsanity/Purchase Broad Sword Rimuldar"
+			},
+			{
+				"name": "Purchase Half Plate",
+				"ref": "Main/Shopsanity/Purchase Half Plate Rimuldar"
+			},
+			{
+				"name": "Purchase Full Plate",
+				"ref": "Main/Shopsanity/Purchase Full Plate Rimuldar"
+			},
+			{
+				"name": "Purchase Magic Armor",
+				"ref": "Main/Shopsanity/Purchase Magic Armor Rimuldar"
+			},
+      {
+        "name": "Inn Chest",
+        "ref": "Main/Rimuldar/Rimuldar - Inn Chest"
+      }
+    ]
+  },
+	{
+		"name": "Rimuldar Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 720,
+				"y": 510
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Metal Scorpion",
+				"ref": "Main/Monstersanity/Defeat Metal Scorpion"
+			},
+			{
+				"name": "Defeat Wolf",
+				"ref": "Main/Monstersanity/Defeat Wolf"
+			},
+			{
+				"name": "Defeat Wraith",
+				"ref": "Main/Monstersanity/Defeat Wraith"
+			},
+			{
+				"name": "Defeat Wolflord",
+				"ref": "Main/Monstersanity/Defeat Wolflord"
+			},
+			{
+				"name": "Defeat Goldman",
+				"ref": "Main/Monstersanity/Defeat Goldman"
+			},
+		]
+	},
+  {
+    "name": "Mountain Cave",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 260,
+        "y": 480
+      }
+    ],
+    "sections": [
+      {
+        "name": "Level 1 - Chest",
+        "ref": "Main/Mountain Cave/Mountain Cave - Level 1 - Chest"
+      },
+      {
+        "name": "Level 2 - Chest 1",
+        "ref": "Main/Mountain Cave/Mountain Cave - Level 2 - Chest 1"
+      },
+      {
+        "name": "Level 2 - Chest 2",
+        "ref": "Main/Mountain Cave/Mountain Cave - Level 2 - Chest 2"
+      },
+      {
+        "name": "Level 2 - Chest 3",
+        "ref": "Main/Mountain Cave/Mountain Cave - Level 2 - Chest 3"
+      },
+      {
+        "name": "Level 2 - Chest 4",
+        "ref": "Main/Mountain Cave/Mountain Cave - Level 2 - Chest 4"
+      },
+			{
+				"name": "Defeat Druin",
+				"ref": "Main/Monstersanity/Defeat Druin"
+			},
+			{
+				"name": "Defeat Poltergeist",
+				"ref": "Main/Monstersanity/Defeat Poltergeist"
+			},
+			{
+				"name": "Defeat Droll",
+				"ref": "Main/Monstersanity/Defeat Droll"
+			},
+			{
+				"name": "Defeat Drakeema",
+				"ref": "Main/Monstersanity/Defeat Drakeema"
+			},
+			{
+				"name": "Defeat Skeleton",
+				"ref": "Main/Monstersanity/Defeat Skeleton"
+			},
+			{
+				"name": "Defeat Warlock",
+				"ref": "Main/Monstersanity/Defeat Warlock"
+			}
+    ]
+  },
+  {
+    "name": "Hauksness",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 232,
+        "y": 732
+      }
+    ],
+    "sections": [
+			{
+				"name": "Defeat Axe Knight",
+				"ref": "Main/Monstersanity/Defeat Axe Knight"
+			},
+			{
+        "name": "Erdrick's Armor",
+        "ref": "Main/Hauksness/Erdrick's Armor"
+      }
+    ]
+  },
+	{
+		"name": "Cantlin",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 609,
+				"y": 835
+			}
+		],
+		"sections": [
+			{
+				"name": "Purchase Bamboo Pole",
+        "ref": "Main/Shopsanity/Purchase Bamboo Pole Cantlin"
+			},
+      {
+        "name": "Purchase Club",
+        "ref": "Main/Shopsanity/Purchase Club Cantlin"
+      },
+      {
+        "name": "Purchase Copper Sword",
+        "ref": "Main/Shopsanity/Purchase Copper Sword Cantlin"
+			},
+			{
+        "name": "Purchase Leather Armor",
+        "ref": "Main/Shopsanity/Purchase Leather Armor Cantlin"
+      },
+			{
+        "name": "Purchase Chain Mail",
+        "ref": "Main/Shopsanity/Purchase Chain Mail Cantlin"
+      },
+			{
+        "name": "Purchase Large Shield",
+        "ref": "Main/Shopsanity/Purchase Large Shield Cantlin"
+      },
+			{
+				"name": "Purchase Hand Axe",
+				"ref": "Main/Shopsanity/Purchase Hand Axe Cantlin"
+			},
+			{
+				"name": "Purchase Broad Sword",
+				"ref": "Main/Shopsanity/Purchase Broad Sword Cantlin"
+			},
+			{
+				"name": "Purchase Full Plate",
+				"ref": "Main/Shopsanity/Purchase Full Plate Cantlin"
+			},
+			{
+				"name": "Purchase Magic Armor",
+				"ref": "Main/Shopsanity/Purchase Magic Armor Cantlin"
+			},
+			{
+				"name": "Purchase Flame Sword",
+				"ref": "Main/Shopsanity/Purchase Flame Sword Cantlin"
+			},
+			{
+				"name": "Purchase Silver Shield",
+				"ref": "Main/Shopsanity/Purchase Silver Shield Cantlin"
+			}
+		]
+	},
+	{
+		"name": "Cantlin Monsters",
+		"map_locations": [
+			{
+				"map": "world_map",
+				"x": 480,
+				"y": 905
+			}
+		],
+		"sections": [
+			{
+				"name": "Defeat Metal Slime",
+				"ref": "Main/Monstersanity/Defeat Metal Slime"
+			},
+			{
+				"name": "Defeat Wyvern",
+				"ref": "Main/Monstersanity/Defeat Wyvern"
+			},
+			{
+				"name": "Defeat Rogue Scorpion",
+				"ref": "Main/Monstersanity/Defeat Rogue Scorpion"
+			},
+			{
+				"name": "Defeat Wraith Knight",
+				"ref": "Main/Monstersanity/Defeat Wraith Knight"
+			},
+			{
+				"name": "Defeat Knight",
+				"ref": "Main/Monstersanity/Defeat Knight"
+			},
+			{
+				"name": "Defeat Magiwyvern",
+				"ref": "Main/Monstersanity/Defeat Magiwyvern"
+			},
+			{
+				"name": "Defeat Demon Knight",
+				"ref": "Main/Monstersanity/Defeat Demon Knight"
+			},
+			{
+				"name": "Defeat Werewolf",
+				"ref": "Main/Monstersanity/Defeat Werewolf"
+			},
+			{
+				"name": "Defeat Starwyvern",
+				"ref": "Main/Monstersanity/Defeat Starwyvern"
+			},
+			{
+				"name": "Defeat Wizard",
+				"ref": "Main/Monstersanity/Defeat Wizard"
+			}
+		]
+	},
+  {
+    "name": "Levelsanity",
+    "map_locations": [
+      {
+        "map": "world_map",
+        "x": 373,
+        "y": 412
+      }
+    ],
+    "sections": [
+      {
+        "name": "Level 2-9",
+				"ref": "Main/Levelsanity/Level 2-9"
+      },
+      {
+        "name": "Level 10+",
+        "ref": "Main/Levelsanity/Level 10+"
+      }
+    ]
+  }
+]

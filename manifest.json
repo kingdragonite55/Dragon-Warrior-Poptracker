@@ -1,0 +1,35 @@
+﻿{
+  "name": "Dragon Warrior",
+  "game_name": "Dragon Warrior",
+  "package_version": "1.0.0",
+  "package_uid": "dragon_warrior",
+  "platform": "nes",
+  "author": "KingDragonite & Quinian",
+  "variants": {
+    "standard": {
+      "display_name": "Map Tracker | DQ9 Item Sprites",
+      "flags": [
+        "ap"
+      ]
+    },
+		"var_hd2dsprites": {
+			"display_name": "Map Tracker | HD-2D Item Sprites",
+			"flags": [
+				"ap"
+			]
+		},
+    "var_itemsonly": {
+     "display_name": "Items Only | DQ9 Item Sprites",
+     "flags": [
+       "ap"
+     ]
+    },
+		"var_itemsonly_hd2d": {
+     "display_name": "Items Only | HD-2D Item Sprites",
+     "flags": [
+       "ap"
+     ]
+    },
+  },
+	"min_poptracker_version": "0.25.4"
+}

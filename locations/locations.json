@@ -1,0 +1,596 @@
+[
+  {
+    "name": "Main",
+		"chest_unopened_img": "/images/npcs/chest.png",
+		"chest_opened_img": "/images/npcs/chest-grey.png",
+    "children": [
+      {
+        "name": "world_map",
+        "sections": [
+          {
+            "name": "Staff of Rain",
+						"chest_unopened_img": "/images/npcs/wizard.png",
+						"chest_opened_img": "/images/npcs/wizard-grey.png",
+            "access_rules": [
+              "@Main/Rimuldar, magic_key, silver_harp"
+            ]
+          },
+          {
+            "name": "Erdrick's Token",
+            "visibility_rules": ["searchsanity"],
+						"access_rules": [
+							"@Main/Cantlin, gwaelins_love"
+						]
+          },
+          {
+            "name": "Rainbow Shrine",
+						"chest_unopened_img": "/images/npcs/wizard.png",
+						"chest_opened_img": "/images/npcs/wizard-grey.png",
+            "access_rules": [
+              "@Main/Rimuldar, $rainbow_shrine"
+           ]
+          }
+        ]
+      },
+      {
+        "name": "Tantagel Castle",
+        "sections": [
+          {
+            "name": "Throne Room - Gold Chest"
+          },
+          {
+            "name": "Throne Room - Key Chest"
+          },
+          {
+            "name": "Throne Room - Torch Chest"
+          },
+          {
+            "name": "Tantegel Castle - Gold Chest 1",
+            "access_rules": [
+              "magic_key"
+            ]
+          },
+          {
+            "name": "Tantegel Castle - Gold Chest 2",
+            "access_rules": [
+              "magic_key"
+            ]
+          },
+          {
+            "name": "Tantegel Castle - Gold Chest 3",
+            "access_rules": [
+              "magic_key"
+            ]
+          },
+          {
+            "name": "Tantegel Castle - Gold Chest 4",
+            "access_rules": [
+              "magic_key"
+            ]
+          },
+          {
+            "name": "Stones of Sunlight",
+						"chest_unopened_img": "/images/npcs/wizard.png",
+						"chest_opened_img": "/images/npcs/wizard-grey.png",
+            "access_rules": [
+              "magic_key"
+            ]
+          },
+          {
+            "name": "Return Gwaelin to Castle",
+						"chest_unopened_img": "/images/npcs/princess.png",
+						"chest_opened_img": "/images/npcs/princess-grey.png",
+            "access_rules": [
+              "@Main/Swamp Cave/Rescue Princess Gwaelin"
+            ],
+
+          }
+        ]
+      },
+      {
+        "name": "Swamp Cave",
+        "sections": [
+          {
+            "name": "Rescue Princess Gwaelin",
+						"chest_unopened_img": "/images/npcs/princess.png",
+						"chest_opened_img": "/images/npcs/princess-grey.png",
+            "access_rules": [
+              "magic_key, $equipment_helper|4|4|2"
+            ],
+
+          }
+        ]
+      },
+      {
+        "name": "Garinham",
+				"access_rules": [
+					"$equipment_helper|2|2|1"
+				],
+        "sections": [
+          {
+            "name": "Garinham - Chest 1",
+            "access_rules": [
+              "magic_key"
+            ]
+          },
+          {
+            "name": "Garinham - Chest 2",
+            "access_rules": [
+              "magic_key"
+            ]
+          },
+          {
+            "name": "Garinham - Chest 3",
+            "access_rules": [
+              "magic_key"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Garin's Grave",
+				"access_rules": [
+					"magic_key, $equipment_helper|4|4|2"
+				],
+        "sections": [
+          {
+            "name": "Garin's Grave - Level 1 - Chest 1"
+          },
+          {
+            "name": "Garin's Grave - Level 1 - Chest 2"
+          },
+          {
+            "name": "Garin's Grave - Level 1 - Chest 3"
+          },
+          {
+            "name": "Garin's Grave - Level 3 - Chest 1"
+          },
+          {
+            "name": "Garin's Grave - Level 3 - Chest 2"
+          }
+        ]
+      },
+      {
+        "name": "Erdrick's Cave",
+        "sections": [
+          {
+            "name": "Erdrick's Tablet"
+          }
+        ]
+      },
+      {
+        "name": "Kol",
+				"access_rules": ["$equipment_helper|1|1|1"],
+        "sections": [
+          {
+            "name": "Fairy Flute",
+            "visibility_rules": ["searchsanity"]
+          }
+        ]
+      },
+      {
+        "name": "Charlock Castle",
+        "access_rules": [
+          "rainbow_drop, magic_key, $equipment_helper|6|6|2"
+        ],
+        "sections": [
+          {
+            "name": "Erdrick's Sword"
+          },
+          {
+            "name": "Dragonlord's Lair - Chest 1"
+          },
+          {
+            "name": "Dragonlord's Lair - Chest 2"
+          },
+          {
+            "name": "Dragonlord's Lair - Chest 3",
+          },
+          {
+            "name": "Dragonlord's Lair - Chest 4"
+          },
+          {
+            "name": "Dragonlord's Lair - Chest 5"
+          },
+          {
+            "name": "Dragonlord's Lair - Chest 6"
+          },
+          {
+            "name": "Defeated Dragonlord",
+						"chest_unopened_img": "/images/npcs/dragonlord_npc.png",
+						"chest_opened_img": "/images/npcs/dragonlord_npc-grey.png",
+						"access_rules": [
+							"$can_defeat_dragonlord"
+						]
+          }
+        ]
+      },
+      {
+        "name": "Rimuldar",
+				"access_rules": [
+					"$equipment_helper|3|3|1"
+				],
+        "sections": [
+          {
+            "name": "Rimuldar - Inn Chest",
+            "access_rules": [
+              "magic_key"
+            ]
+          }
+        ]
+      },
+      {
+        "name": "Mountain Cave",
+				"access_rules": "$equipment_helper|3|3|2",
+        "sections": [
+          {
+            "name": "Mountain Cave - Level 1 - Chest"
+          },
+          {
+            "name": "Mountain Cave - Level 2 - Chest 1"
+          },
+          {
+            "name": "Mountain Cave - Level 2 - Chest 2"
+          },
+          {
+            "name": "Mountain Cave - Level 2 - Chest 3"
+          },
+          {
+            "name": "Mountain Cave - Level 2 - Chest 4"
+          }
+        ]
+      },
+      {
+        "name": "Hauksness",
+				"access_rules": [
+					"$equipment_helper|5|5|3"
+				],
+        "sections": [
+          {
+            "name": "Erdrick's Armor",
+            "visibility_rules": ["searchsanity"]
+          }
+        ]
+      },
+			{
+				"name": "Cantlin",
+				"access_rules": [
+					"magic_key, $equipment_helper|4|4|2"
+				]
+			},
+      {
+        "name": "Shopsanity",
+				"visibility_rules": ["shopsanity"],
+				"chest_unopened_img": "/images/npcs/shopkeep.png",
+				"chest_opened_img": "/images/npcs/shopkeep-grey.png",
+        "sections": [
+          {
+            "name": "Purchase Bamboo Pole Brecconary",
+          },
+					{
+            "name": "Purchase Bamboo Pole Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Club Brecconary",
+          },
+					{
+            "name": "Purchase Club Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Club Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Copper Sword Brecconary",
+          },
+					{
+            "name": "Purchase Copper Sword Kol",
+						"access_rules": ["@Main/Kol"]
+          },
+					{
+            "name": "Purchase Copper Sword Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Copper Sword Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+					{
+            "name": "Purchase Copper Sword Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Hand Axe Kol",
+						"access_rules": ["@Main/Kol"]
+          },
+					{
+            "name": "Purchase Hand Axe Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Hand Axe Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+					{
+            "name": "Purchase Hand Axe Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Broad Sword Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+					{
+            "name": "Purchase Broad Sword Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Flame Sword Cantlin",
+						"access_rules": ["magic_key, @Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Clothes Brecconary",
+          },
+          {
+            "name": "Purchase Leather Armor Brecconary",
+          },
+					{
+            "name": "Purchase Leather Armor Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Leather Armor Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Chain Mail Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Chain Mail Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Half Plate Kol",
+						"access_rules": ["@Main/Kol"]
+          },
+					{
+            "name": "Purchase Half Plate Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Half Plate Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+          {
+            "name": "Purchase Full Plate Kol",
+						"access_rules": ["@Main/Kol"]
+          },
+					{
+            "name": "Purchase Full Plate Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+					{
+            "name": "Purchase Full Plate Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Magic Armor Rimuldar",
+						"access_rules": ["@Main/Rimuldar"]
+          },
+					{
+            "name": "Purchase Magic Armor Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Small Shield Brecconary",
+          },
+					{
+            "name": "Purchase Small Shield Kol",
+						"access_rules": ["@Main/Kol"]
+          },
+          {
+            "name": "Purchase Large Shield Garinham",
+						"access_rules": ["@Main/Garinham"]
+          },
+					{
+            "name": "Purchase Large Shield Cantlin",
+						"access_rules": ["@Main/Cantlin"]
+          },
+          {
+            "name": "Purchase Silver Shield Cantlin",
+						"access_rules": ["magic_key, @Main/Cantlin"]
+          }
+        ]
+      },
+      {
+        "name": "Levelsanity",
+        "visibility_rules": ["levelsanity"],
+				"chest_unopened_img": "/images/npcs/king.png",
+				"chest_opened_img": "/images/npcs/king-grey.png",
+        "sections": [
+          {
+            "name": "Level 2-9",
+						"item_count": 8,
+						"clear_as_group": false
+          },
+          {
+            "name": "Level 10+",
+						"item_count": 21,
+						"clear_as_group": false,
+						"visibility_rules": ["$hasHighLevelsanity"],
+						"access_rules": [
+							"magic_key, $equipment_helper|3|3|2"
+						]
+          }
+        ]
+      },
+			{
+				"name": "Monstersanity",
+				"visibility_rules": ["monstersanity"],
+				"chest_unopened_img": "/images/npcs/slime.png",
+				"chest_opened_img": "/images/npcs/slime-grey.png",
+				"sections": [
+					{
+						"name": "Defeat Slime"
+					},
+					{
+						"name": "Defeat Red Slime"
+					},
+					{
+						"name": "Defeat Drakee"
+					},
+					{
+						"name": "Defeat Magidrakee",
+						"access_rules": ["@Main/Kol"]
+					},
+					{
+						"name": "Defeat Scorpion",
+						"access_rules": ["@Main/Kol"]
+					},
+					{
+						"name": "Defeat Ghost",
+						"access_rules": ["@Main/Garinham"]
+					},
+					{
+						"name": "Defeat Magician",
+						"access_rules": ["@Main/Garinham"]
+					},
+					{
+						"name": "Defeat Druin",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Poltergeist",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Droll",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Drakeema",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Skeleton",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Warlock",
+						"access_rules": ["@Main/Mountain Cave"]
+					},
+					{
+						"name": "Defeat Green Dragon",
+						"access_rules": ["@Main/Swamp Cave/Rescue Princess Gwaelin"]
+					},
+					{
+						"name": "Defeat Axe Knight",
+						"access_rules": ["@Main/Hauksness"]
+					},
+					{
+						"name": "Defeat Metal Scorpion",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Wolf",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Wraith",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Wolflord",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Goldman",
+						"access_rules": ["@Main/Rimuldar"]
+					},
+					{
+						"name": "Defeat Specter",
+						"access_rules": ["@Main/Garin's Grave"]
+					},
+					{
+						"name": "Defeat Druinlord",
+						"access_rules": ["@Main/Garin's Grave"]
+					},
+					{
+						"name": "Defeat Drollmagi",
+						"access_rules": ["@Main/Garin's Grave"]
+					},
+					{
+						"name": "Defeat Metal Slime",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Wyvern",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Rogue Scorpion",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Wraith Knight",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Knight",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Magiwyvern",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Demon Knight",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Werewolf",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Starwyvern",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Wizard",
+						"access_rules": ["@Main/Cantlin"]
+					},
+					{
+						"name": "Defeat Blue Dragon",
+						"access_rules": ["@Main/Charlock Castle"]
+					},
+					{
+						"name": "Defeat Stoneman",
+						"access_rules": ["@Main/Charlock Castle"]
+					},
+					{
+						"name": "Defeat Armored Knight",
+						"access_rules": ["@Main/Charlock Castle"]
+					},
+					{
+						"name": "Defeat Red Dragon",
+						"access_rules": ["@Main/Charlock Castle"]
+					},
+					{
+						"name": "Defeat Golem",
+						"access_rules": ["@Main/Charlock Castle/Defeated Dragonlord"]
+					},
+					{
+						"name": "Defeat Dragonlord 1",
+						"access_rules": ["@Main/Charlock Castle/Defeated Dragonlord"]
+					},
+					{
+						"name": "Defeat Dragonlord 2",
+						"access_rules": ["@Main/Charlock Castle/Defeated Dragonlord"]
+					},
+				]
+			}
+    ]
+  }
+]
