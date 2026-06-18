@@ -21,5 +21,9 @@ function dump_table(o, depth)
 end
 
 function hasHighLevelsanity()
-	return levelsanity_high
+	if levelsanity_high == nil then
+		return true
+	else
+		return levelsanity_high
+	end
 end
